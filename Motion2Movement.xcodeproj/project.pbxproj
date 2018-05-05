@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9EFD62D7209E6522005AEEE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFD62D6209E6522005AEEE4 /* AppDelegate.swift */; };
+		9EFD62D9209E6522005AEEE4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFD62D8209E6522005AEEE4 /* ViewController.swift */; };
+		9EFD62DC209E6522005AEEE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EFD62DA209E6522005AEEE4 /* Main.storyboard */; };
+		9EFD62DE209E6523005AEEE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EFD62DD209E6523005AEEE4 /* Assets.xcassets */; };
+		9EFD62E1209E6523005AEEE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EFD62DF209E6523005AEEE4 /* LaunchScreen.storyboard */; };
+		9EFD62EC209E6523005AEEE4 /* Motion2MovementTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFD62EB209E6523005AEEE4 /* Motion2MovementTests.swift */; };
+		9EFD62F7209E6523005AEEE4 /* Motion2MovementUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFD62F6209E6523005AEEE4 /* Motion2MovementUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9EFD62E8209E6523005AEEE4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9EFD62CB209E6522005AEEE4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9EFD62D2209E6522005AEEE4;
+			remoteInfo = Motion2Movement;
+		};
+		9EFD62F3209E6523005AEEE4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9EFD62CB209E6522005AEEE4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9EFD62D2209E6522005AEEE4;
+			remoteInfo = Motion2Movement;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9EFD62D3209E6522005AEEE4 /* Motion2Movement.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Motion2Movement.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EFD62D6209E6522005AEEE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9EFD62D8209E6522005AEEE4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9EFD62DB209E6522005AEEE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9EFD62DD209E6523005AEEE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9EFD62E0209E6523005AEEE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9EFD62E2209E6523005AEEE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9EFD62E7209E6523005AEEE4 /* Motion2MovementTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Motion2MovementTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EFD62EB209E6523005AEEE4 /* Motion2MovementTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Motion2MovementTests.swift; sourceTree = "<group>"; };
+		9EFD62ED209E6523005AEEE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9EFD62F2209E6523005AEEE4 /* Motion2MovementUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Motion2MovementUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EFD62F6209E6523005AEEE4 /* Motion2MovementUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Motion2MovementUITests.swift; sourceTree = "<group>"; };
+		9EFD62F8209E6523005AEEE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9EFD62D0209E6522005AEEE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EFD62E4209E6523005AEEE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EFD62EF209E6523005AEEE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9EFD62CA209E6522005AEEE4 = {
+			isa = PBXGroup;
+			children = (
+				9EFD62D5209E6522005AEEE4 /* Motion2Movement */,
+				9EFD62EA209E6523005AEEE4 /* Motion2MovementTests */,
+				9EFD62F5209E6523005AEEE4 /* Motion2MovementUITests */,
+				9EFD62D4209E6522005AEEE4 /* Products */,
+				9EFD62D6209E6522005AEEE4 /* AppDelegate.swift */,
+			);
+			sourceTree = "<group>";
+		};
+		9EFD62D4209E6522005AEEE4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9EFD62D3209E6522005AEEE4 /* Motion2Movement.app */,
+				9EFD62E7209E6523005AEEE4 /* Motion2MovementTests.xctest */,
+				9EFD62F2209E6523005AEEE4 /* Motion2MovementUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9EFD62D5209E6522005AEEE4 /* Motion2Movement */ = {
+			isa = PBXGroup;
+			children = (
+				9EFD62D8209E6522005AEEE4 /* ViewController.swift */,
+				9EFD62DA209E6522005AEEE4 /* Main.storyboard */,
+				9EFD62DD209E6523005AEEE4 /* Assets.xcassets */,
+				9EFD62DF209E6523005AEEE4 /* LaunchScreen.storyboard */,
+				9EFD62E2209E6523005AEEE4 /* Info.plist */,
+			);
+			path = Motion2Movement;
+			sourceTree = "<group>";
+		};
+		9EFD62EA209E6523005AEEE4 /* Motion2MovementTests */ = {
+			isa = PBXGroup;
+			children = (
+				9EFD62EB209E6523005AEEE4 /* Motion2MovementTests.swift */,
+				9EFD62ED209E6523005AEEE4 /* Info.plist */,
+			);
+			path = Motion2MovementTests;
+			sourceTree = "<group>";
+		};
+		9EFD62F5209E6523005AEEE4 /* Motion2MovementUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9EFD62F6209E6523005AEEE4 /* Motion2MovementUITests.swift */,
+				9EFD62F8209E6523005AEEE4 /* Info.plist */,
+			);
+			path = Motion2MovementUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9EFD62D2209E6522005AEEE4 /* Motion2Movement */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9EFD62FB209E6523005AEEE4 /* Build configuration list for PBXNativeTarget "Motion2Movement" */;
+			buildPhases = (
+				9EFD62CF209E6522005AEEE4 /* Sources */,
+				9EFD62D0209E6522005AEEE4 /* Frameworks */,
+				9EFD62D1209E6522005AEEE4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Motion2Movement;
+			productName = Motion2Movement;
+			productReference = 9EFD62D3209E6522005AEEE4 /* Motion2Movement.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9EFD62E6209E6523005AEEE4 /* Motion2MovementTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9EFD62FE209E6523005AEEE4 /* Build configuration list for PBXNativeTarget "Motion2MovementTests" */;
+			buildPhases = (
+				9EFD62E3209E6523005AEEE4 /* Sources */,
+				9EFD62E4209E6523005AEEE4 /* Frameworks */,
+				9EFD62E5209E6523005AEEE4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9EFD62E9209E6523005AEEE4 /* PBXTargetDependency */,
+			);
+			name = Motion2MovementTests;
+			productName = Motion2MovementTests;
+			productReference = 9EFD62E7209E6523005AEEE4 /* Motion2MovementTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9EFD62F1209E6523005AEEE4 /* Motion2MovementUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9EFD6301209E6523005AEEE4 /* Build configuration list for PBXNativeTarget "Motion2MovementUITests" */;
+			buildPhases = (
+				9EFD62EE209E6523005AEEE4 /* Sources */,
+				9EFD62EF209E6523005AEEE4 /* Frameworks */,
+				9EFD62F0209E6523005AEEE4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9EFD62F4209E6523005AEEE4 /* PBXTargetDependency */,
+			);
+			name = Motion2MovementUITests;
+			productName = Motion2MovementUITests;
+			productReference = 9EFD62F2209E6523005AEEE4 /* Motion2MovementUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9EFD62CB209E6522005AEEE4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Victor Zhong";
+				TargetAttributes = {
+					9EFD62D2209E6522005AEEE4 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					9EFD62E6209E6523005AEEE4 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 9EFD62D2209E6522005AEEE4;
+					};
+					9EFD62F1209E6523005AEEE4 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 9EFD62D2209E6522005AEEE4;
+					};
+				};
+			};
+			buildConfigurationList = 9EFD62CE209E6522005AEEE4 /* Build configuration list for PBXProject "Motion2Movement" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9EFD62CA209E6522005AEEE4;
+			productRefGroup = 9EFD62D4209E6522005AEEE4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9EFD62D2209E6522005AEEE4 /* Motion2Movement */,
+				9EFD62E6209E6523005AEEE4 /* Motion2MovementTests */,
+				9EFD62F1209E6523005AEEE4 /* Motion2MovementUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9EFD62D1209E6522005AEEE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EFD62E1209E6523005AEEE4 /* LaunchScreen.storyboard in Resources */,
+				9EFD62DE209E6523005AEEE4 /* Assets.xcassets in Resources */,
+				9EFD62DC209E6522005AEEE4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EFD62E5209E6523005AEEE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EFD62F0209E6523005AEEE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9EFD62CF209E6522005AEEE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EFD62D9209E6522005AEEE4 /* ViewController.swift in Sources */,
+				9EFD62D7209E6522005AEEE4 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EFD62E3209E6523005AEEE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EFD62EC209E6523005AEEE4 /* Motion2MovementTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EFD62EE209E6523005AEEE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EFD62F7209E6523005AEEE4 /* Motion2MovementUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9EFD62E9209E6523005AEEE4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9EFD62D2209E6522005AEEE4 /* Motion2Movement */;
+			targetProxy = 9EFD62E8209E6523005AEEE4 /* PBXContainerItemProxy */;
+		};
+		9EFD62F4209E6523005AEEE4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9EFD62D2209E6522005AEEE4 /* Motion2Movement */;
+			targetProxy = 9EFD62F3209E6523005AEEE4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9EFD62DA209E6522005AEEE4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9EFD62DB209E6522005AEEE4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9EFD62DF209E6523005AEEE4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9EFD62E0209E6523005AEEE4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9EFD62F9209E6523005AEEE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9EFD62FA209E6523005AEEE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9EFD62FC209E6523005AEEE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RKDEZ4QK32;
+				INFOPLIST_FILE = Motion2Movement/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.viczhong.Motion2Movement;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9EFD62FD209E6523005AEEE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RKDEZ4QK32;
+				INFOPLIST_FILE = Motion2Movement/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.viczhong.Motion2Movement;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9EFD62FF209E6523005AEEE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RKDEZ4QK32;
+				INFOPLIST_FILE = Motion2MovementTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.viczhong.Motion2MovementTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Motion2Movement.app/Motion2Movement";
+			};
+			name = Debug;
+		};
+		9EFD6300209E6523005AEEE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RKDEZ4QK32;
+				INFOPLIST_FILE = Motion2MovementTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.viczhong.Motion2MovementTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Motion2Movement.app/Motion2Movement";
+			};
+			name = Release;
+		};
+		9EFD6302209E6523005AEEE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RKDEZ4QK32;
+				INFOPLIST_FILE = Motion2MovementUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.viczhong.Motion2MovementUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Motion2Movement;
+			};
+			name = Debug;
+		};
+		9EFD6303209E6523005AEEE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RKDEZ4QK32;
+				INFOPLIST_FILE = Motion2MovementUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.viczhong.Motion2MovementUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Motion2Movement;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9EFD62CE209E6522005AEEE4 /* Build configuration list for PBXProject "Motion2Movement" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EFD62F9209E6523005AEEE4 /* Debug */,
+				9EFD62FA209E6523005AEEE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9EFD62FB209E6523005AEEE4 /* Build configuration list for PBXNativeTarget "Motion2Movement" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EFD62FC209E6523005AEEE4 /* Debug */,
+				9EFD62FD209E6523005AEEE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9EFD62FE209E6523005AEEE4 /* Build configuration list for PBXNativeTarget "Motion2MovementTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EFD62FF209E6523005AEEE4 /* Debug */,
+				9EFD6300209E6523005AEEE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9EFD6301209E6523005AEEE4 /* Build configuration list for PBXNativeTarget "Motion2MovementUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EFD6302209E6523005AEEE4 /* Debug */,
+				9EFD6303209E6523005AEEE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9EFD62CB209E6522005AEEE4 /* Project object */;
+}
