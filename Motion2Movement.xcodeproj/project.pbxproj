@@ -7,16 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3DF12EFF480081AE21E6387F /* Pods_Motion2MovementTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8695FC557D4FC18910C4262 /* Pods_Motion2MovementTests.framework */; };
-		4B1379C7B0B301B11AB0B490 /* Pods_Motion2MovementUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20488B71B30D8BD06C5CD1CE /* Pods_Motion2MovementUITests.framework */; };
+		0D09D0E9B46BB6D728C9CC59 /* Pods_Motion2Movement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 313FDD2FBC1538BA1D17D9C6 /* Pods_Motion2Movement.framework */; };
+		7C867B41F0E8EA77CD7D63C9 /* Pods_Motion2MovementUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FD8CFD082DC7F7F21985DD0 /* Pods_Motion2MovementUITests.framework */; };
+		9EB51CD720CF149800271C69 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EB51CD620CF149800271C69 /* SWRevealViewController.m */; };
+		9EB51CD920CF1BA400271C69 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB51CD820CF1BA400271C69 /* HomeViewController.swift */; };
 		9EFD62D7209E6522005AEEE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFD62D6209E6522005AEEE4 /* AppDelegate.swift */; };
-		9EFD62D9209E6522005AEEE4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFD62D8209E6522005AEEE4 /* ViewController.swift */; };
 		9EFD62DC209E6522005AEEE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EFD62DA209E6522005AEEE4 /* Main.storyboard */; };
 		9EFD62DE209E6523005AEEE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EFD62DD209E6523005AEEE4 /* Assets.xcassets */; };
 		9EFD62E1209E6523005AEEE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EFD62DF209E6523005AEEE4 /* LaunchScreen.storyboard */; };
 		9EFD62EC209E6523005AEEE4 /* Motion2MovementTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFD62EB209E6523005AEEE4 /* Motion2MovementTests.swift */; };
 		9EFD62F7209E6523005AEEE4 /* Motion2MovementUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFD62F6209E6523005AEEE4 /* Motion2MovementUITests.swift */; };
-		D4A4007D91D0B7A57EC0419A /* Pods_Motion2Movement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8D37080C4678BC60C6B9A21 /* Pods_Motion2Movement.framework */; };
+		F3039FECDD65C3A123E66AAC /* Pods_Motion2MovementTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71EC68EE4219F9DCDDCA6820 /* Pods_Motion2MovementTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,15 +38,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0C20B221ECE2A4663753ACC9 /* Pods-Motion2Movement.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Motion2Movement.release.xcconfig"; path = "Pods/Target Support Files/Pods-Motion2Movement/Pods-Motion2Movement.release.xcconfig"; sourceTree = "<group>"; };
-		17A921FF9175923B6530E8D7 /* Pods-Motion2MovementUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Motion2MovementUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Motion2MovementUITests/Pods-Motion2MovementUITests.release.xcconfig"; sourceTree = "<group>"; };
-		20488B71B30D8BD06C5CD1CE /* Pods_Motion2MovementUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Motion2MovementUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		21E68006FDCFCE7F4C0137E0 /* Pods-Motion2Movement.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Motion2Movement.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Motion2Movement/Pods-Motion2Movement.debug.xcconfig"; sourceTree = "<group>"; };
-		2A391E056ECF6A3B2E31DC3A /* Pods-Motion2MovementTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Motion2MovementTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Motion2MovementTests/Pods-Motion2MovementTests.release.xcconfig"; sourceTree = "<group>"; };
-		45B63D271E57686C3D530FCD /* Pods-Motion2MovementTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Motion2MovementTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Motion2MovementTests/Pods-Motion2MovementTests.debug.xcconfig"; sourceTree = "<group>"; };
+		13F7EBFB938B524CCB4F131A /* Pods-Motion2MovementUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Motion2MovementUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Motion2MovementUITests/Pods-Motion2MovementUITests.release.xcconfig"; sourceTree = "<group>"; };
+		1D285C836D9F6EA89385CB56 /* Pods-Motion2MovementTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Motion2MovementTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Motion2MovementTests/Pods-Motion2MovementTests.release.xcconfig"; sourceTree = "<group>"; };
+		313FDD2FBC1538BA1D17D9C6 /* Pods_Motion2Movement.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Motion2Movement.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BB48E3443D35DEA6A67894B /* Pods-Motion2Movement.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Motion2Movement.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Motion2Movement/Pods-Motion2Movement.debug.xcconfig"; sourceTree = "<group>"; };
+		5FD8CFD082DC7F7F21985DD0 /* Pods_Motion2MovementUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Motion2MovementUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		61A4597A04361864B79930AD /* Pods-Motion2MovementTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Motion2MovementTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Motion2MovementTests/Pods-Motion2MovementTests.debug.xcconfig"; sourceTree = "<group>"; };
+		66F7D83D1E0BB288BD1A94A9 /* Pods-Motion2Movement.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Motion2Movement.release.xcconfig"; path = "Pods/Target Support Files/Pods-Motion2Movement/Pods-Motion2Movement.release.xcconfig"; sourceTree = "<group>"; };
+		71EC68EE4219F9DCDDCA6820 /* Pods_Motion2MovementTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Motion2MovementTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		982F5803DE91CAEFB3ECE770 /* Pods-Motion2MovementUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Motion2MovementUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Motion2MovementUITests/Pods-Motion2MovementUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9EB51CD420CF149800271C69 /* Motion2Movement-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Motion2Movement-Bridging-Header.h"; sourceTree = "<group>"; };
+		9EB51CD520CF149800271C69 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		9EB51CD620CF149800271C69 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		9EB51CD820CF1BA400271C69 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		9EFD62D3209E6522005AEEE4 /* Motion2Movement.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Motion2Movement.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EFD62D6209E6522005AEEE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9EFD62D8209E6522005AEEE4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9EFD62DB209E6522005AEEE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9EFD62DD209E6523005AEEE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9EFD62E0209E6523005AEEE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,9 +63,6 @@
 		9EFD62F2209E6523005AEEE4 /* Motion2MovementUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Motion2MovementUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EFD62F6209E6523005AEEE4 /* Motion2MovementUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Motion2MovementUITests.swift; sourceTree = "<group>"; };
 		9EFD62F8209E6523005AEEE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A8695FC557D4FC18910C4262 /* Pods_Motion2MovementTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Motion2MovementTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DE1CF4D680DEF95A20FBB268 /* Pods-Motion2MovementUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Motion2MovementUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Motion2MovementUITests/Pods-Motion2MovementUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		F8D37080C4678BC60C6B9A21 /* Pods_Motion2Movement.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Motion2Movement.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4A4007D91D0B7A57EC0419A /* Pods_Motion2Movement.framework in Frameworks */,
+				0D09D0E9B46BB6D728C9CC59 /* Pods_Motion2Movement.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,7 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3DF12EFF480081AE21E6387F /* Pods_Motion2MovementTests.framework in Frameworks */,
+				F3039FECDD65C3A123E66AAC /* Pods_Motion2MovementTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,32 +86,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B1379C7B0B301B11AB0B490 /* Pods_Motion2MovementUITests.framework in Frameworks */,
+				7C867B41F0E8EA77CD7D63C9 /* Pods_Motion2MovementUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2467D4464BACF0A09C1B8869 /* Pods */ = {
+		04D0F6DC0297CA2F698B6990 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				21E68006FDCFCE7F4C0137E0 /* Pods-Motion2Movement.debug.xcconfig */,
-				0C20B221ECE2A4663753ACC9 /* Pods-Motion2Movement.release.xcconfig */,
-				45B63D271E57686C3D530FCD /* Pods-Motion2MovementTests.debug.xcconfig */,
-				2A391E056ECF6A3B2E31DC3A /* Pods-Motion2MovementTests.release.xcconfig */,
-				DE1CF4D680DEF95A20FBB268 /* Pods-Motion2MovementUITests.debug.xcconfig */,
-				17A921FF9175923B6530E8D7 /* Pods-Motion2MovementUITests.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		3E26220017D3E677FE4D6A27 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				F8D37080C4678BC60C6B9A21 /* Pods_Motion2Movement.framework */,
-				A8695FC557D4FC18910C4262 /* Pods_Motion2MovementTests.framework */,
-				20488B71B30D8BD06C5CD1CE /* Pods_Motion2MovementUITests.framework */,
+				313FDD2FBC1538BA1D17D9C6 /* Pods_Motion2Movement.framework */,
+				71EC68EE4219F9DCDDCA6820 /* Pods_Motion2MovementTests.framework */,
+				5FD8CFD082DC7F7F21985DD0 /* Pods_Motion2MovementUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -134,7 +125,7 @@
 		9EAF6C38209E671300A35850 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				9EFD62D8209E6522005AEEE4 /* ViewController.swift */,
+				9EB51CD820CF1BA400271C69 /* HomeViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -146,6 +137,16 @@
 			path = "View Models";
 			sourceTree = "<group>";
 		};
+		9EB51CD320CF147800271C69 /* SWRevealViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9EB51CD520CF149800271C69 /* SWRevealViewController.h */,
+				9EB51CD620CF149800271C69 /* SWRevealViewController.m */,
+				9EB51CD420CF149800271C69 /* Motion2Movement-Bridging-Header.h */,
+			);
+			path = SWRevealViewController;
+			sourceTree = "<group>";
+		};
 		9EFD62CA209E6522005AEEE4 = {
 			isa = PBXGroup;
 			children = (
@@ -153,8 +154,8 @@
 				9EFD62EA209E6523005AEEE4 /* Motion2MovementTests */,
 				9EFD62F5209E6523005AEEE4 /* Motion2MovementUITests */,
 				9EFD62D4209E6522005AEEE4 /* Products */,
-				2467D4464BACF0A09C1B8869 /* Pods */,
-				3E26220017D3E677FE4D6A27 /* Frameworks */,
+				CE477B17F05F2F1AAEC2B177 /* Pods */,
+				04D0F6DC0297CA2F698B6990 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -171,6 +172,7 @@
 		9EFD62D5209E6522005AEEE4 /* Motion2Movement */ = {
 			isa = PBXGroup;
 			children = (
+				9EB51CD320CF147800271C69 /* SWRevealViewController */,
 				9EAF6C37209E670500A35850 /* Storyboards */,
 				9EAF6C36209E66F300A35850 /* Supporting Files */,
 				9EAF6C38209E671300A35850 /* View Controllers */,
@@ -197,6 +199,19 @@
 			path = Motion2MovementUITests;
 			sourceTree = "<group>";
 		};
+		CE477B17F05F2F1AAEC2B177 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5BB48E3443D35DEA6A67894B /* Pods-Motion2Movement.debug.xcconfig */,
+				66F7D83D1E0BB288BD1A94A9 /* Pods-Motion2Movement.release.xcconfig */,
+				61A4597A04361864B79930AD /* Pods-Motion2MovementTests.debug.xcconfig */,
+				1D285C836D9F6EA89385CB56 /* Pods-Motion2MovementTests.release.xcconfig */,
+				982F5803DE91CAEFB3ECE770 /* Pods-Motion2MovementUITests.debug.xcconfig */,
+				13F7EBFB938B524CCB4F131A /* Pods-Motion2MovementUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -204,11 +219,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9EFD62FB209E6523005AEEE4 /* Build configuration list for PBXNativeTarget "Motion2Movement" */;
 			buildPhases = (
-				79DD574A1E3E4C136EF49233 /* [CP] Check Pods Manifest.lock */,
+				AC018366CB30C5BBF78E329B /* [CP] Check Pods Manifest.lock */,
 				9EFD62CF209E6522005AEEE4 /* Sources */,
 				9EFD62D0209E6522005AEEE4 /* Frameworks */,
 				9EFD62D1209E6522005AEEE4 /* Resources */,
-				51EDEDAABDCA74D6A91C4C9C /* [CP] Embed Pods Frameworks */,
+				77B7EF1C0BA4961B7EE5E461 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -223,11 +238,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9EFD62FE209E6523005AEEE4 /* Build configuration list for PBXNativeTarget "Motion2MovementTests" */;
 			buildPhases = (
-				BD36E3EE97B186836A72C5B5 /* [CP] Check Pods Manifest.lock */,
+				6C28465229C3023CA7B0DCE7 /* [CP] Check Pods Manifest.lock */,
 				9EFD62E3209E6523005AEEE4 /* Sources */,
 				9EFD62E4209E6523005AEEE4 /* Frameworks */,
 				9EFD62E5209E6523005AEEE4 /* Resources */,
-				1CD9067596B230D8F2F0F200 /* [CP] Embed Pods Frameworks */,
+				4D37BEF14F02D946B44B6687 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -243,11 +258,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9EFD6301209E6523005AEEE4 /* Build configuration list for PBXNativeTarget "Motion2MovementUITests" */;
 			buildPhases = (
-				D4F060E0E95DF78F207C8116 /* [CP] Check Pods Manifest.lock */,
+				152081FFFDD37F17A8E68965 /* [CP] Check Pods Manifest.lock */,
 				9EFD62EE209E6523005AEEE4 /* Sources */,
 				9EFD62EF209E6523005AEEE4 /* Frameworks */,
 				9EFD62F0209E6523005AEEE4 /* Resources */,
-				FCA49D5BC37EAD0829AF93BC /* [CP] Embed Pods Frameworks */,
+				5CF3595FE9BFAC6DDDCEC210 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -271,6 +286,7 @@
 				TargetAttributes = {
 					9EFD62D2209E6522005AEEE4 = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0940;
 					};
 					9EFD62E6209E6523005AEEE4 = {
 						CreatedOnToolsVersion = 9.3;
@@ -330,7 +346,25 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1CD9067596B230D8F2F0F200 /* [CP] Embed Pods Frameworks */ = {
+		152081FFFDD37F17A8E68965 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Motion2MovementUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4D37BEF14F02D946B44B6687 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -356,7 +390,45 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Motion2MovementTests/Pods-Motion2MovementTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		51EDEDAABDCA74D6A91C4C9C /* [CP] Embed Pods Frameworks */ = {
+		5CF3595FE9BFAC6DDDCEC210 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Motion2MovementUITests/Pods-Motion2MovementUITests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Motion2MovementUITests/Pods-Motion2MovementUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6C28465229C3023CA7B0DCE7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Motion2MovementTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		77B7EF1C0BA4961B7EE5E461 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -398,7 +470,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Motion2Movement/Pods-Motion2Movement-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		79DD574A1E3E4C136EF49233 /* [CP] Check Pods Manifest.lock */ = {
+		AC018366CB30C5BBF78E329B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -416,62 +488,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		BD36E3EE97B186836A72C5B5 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Motion2MovementTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D4F060E0E95DF78F207C8116 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Motion2MovementUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FCA49D5BC37EAD0829AF93BC /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Motion2MovementUITests/Pods-Motion2MovementUITests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
-				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Motion2MovementUITests/Pods-Motion2MovementUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -479,8 +495,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9EFD62D9209E6522005AEEE4 /* ViewController.swift in Sources */,
 				9EFD62D7209E6522005AEEE4 /* AppDelegate.swift in Sources */,
+				9EB51CD720CF149800271C69 /* SWRevealViewController.m in Sources */,
+				9EB51CD920CF1BA400271C69 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -651,15 +668,21 @@
 		};
 		9EFD62FC209E6523005AEEE4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 21E68006FDCFCE7F4C0137E0 /* Pods-Motion2Movement.debug.xcconfig */;
+			baseConfigurationReference = 5BB48E3443D35DEA6A67894B /* Pods-Motion2Movement.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RKDEZ4QK32;
 				INFOPLIST_FILE = "$(SRCROOT)/Motion2Movement/Supporting Files/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.viczhong.Motion2Movement;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Motion2Movement/SWRevealViewController/Motion2Movement-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -667,15 +690,20 @@
 		};
 		9EFD62FD209E6523005AEEE4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0C20B221ECE2A4663753ACC9 /* Pods-Motion2Movement.release.xcconfig */;
+			baseConfigurationReference = 66F7D83D1E0BB288BD1A94A9 /* Pods-Motion2Movement.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RKDEZ4QK32;
 				INFOPLIST_FILE = "$(SRCROOT)/Motion2Movement/Supporting Files/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.viczhong.Motion2Movement;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Motion2Movement/SWRevealViewController/Motion2Movement-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -683,14 +711,18 @@
 		};
 		9EFD62FF209E6523005AEEE4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 45B63D271E57686C3D530FCD /* Pods-Motion2MovementTests.debug.xcconfig */;
+			baseConfigurationReference = 61A4597A04361864B79930AD /* Pods-Motion2MovementTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RKDEZ4QK32;
 				INFOPLIST_FILE = Motion2MovementTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.viczhong.Motion2MovementTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -701,14 +733,18 @@
 		};
 		9EFD6300209E6523005AEEE4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2A391E056ECF6A3B2E31DC3A /* Pods-Motion2MovementTests.release.xcconfig */;
+			baseConfigurationReference = 1D285C836D9F6EA89385CB56 /* Pods-Motion2MovementTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RKDEZ4QK32;
 				INFOPLIST_FILE = Motion2MovementTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.viczhong.Motion2MovementTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -719,13 +755,17 @@
 		};
 		9EFD6302209E6523005AEEE4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DE1CF4D680DEF95A20FBB268 /* Pods-Motion2MovementUITests.debug.xcconfig */;
+			baseConfigurationReference = 982F5803DE91CAEFB3ECE770 /* Pods-Motion2MovementUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RKDEZ4QK32;
 				INFOPLIST_FILE = Motion2MovementUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.viczhong.Motion2MovementUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -736,13 +776,17 @@
 		};
 		9EFD6303209E6523005AEEE4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 17A921FF9175923B6530E8D7 /* Pods-Motion2MovementUITests.release.xcconfig */;
+			baseConfigurationReference = 13F7EBFB938B524CCB4F131A /* Pods-Motion2MovementUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RKDEZ4QK32;
 				INFOPLIST_FILE = Motion2MovementUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.viczhong.Motion2MovementUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
