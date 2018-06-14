@@ -16,7 +16,7 @@ class ExerciseGuidePatientViewModel: ExerciseGuideViewModel {
 
     func loadDummyData(_ completion: @escaping () -> ()) {
         exercises = [
-            "Handstand",
+            "Walking",
             "Leg Lifts"
         ]
     }
