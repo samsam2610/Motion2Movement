@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		0D09D0E9B46BB6D728C9CC59 /* Pods_Motion2Movement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 313FDD2FBC1538BA1D17D9C6 /* Pods_Motion2Movement.framework */; };
 		7C867B41F0E8EA77CD7D63C9 /* Pods_Motion2MovementUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FD8CFD082DC7F7F21985DD0 /* Pods_Motion2MovementUITests.framework */; };
+		9E1B510E20D1F8500039D7E3 /* ExerciseGuideTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1B510D20D1F8500039D7E3 /* ExerciseGuideTableViewController.swift */; };
+		9E1B511220D1F8E50039D7E3 /* ExerciseGuideTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1B511020D1F8E50039D7E3 /* ExerciseGuideTableViewCell.swift */; };
+		9E1B511320D1F8E50039D7E3 /* ExerciseGuideTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E1B511120D1F8E50039D7E3 /* ExerciseGuideTableViewCell.xib */; };
+		9E1B511520D1FEDC0039D7E3 /* ExerciseGuidePatientViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1B511420D1FEDC0039D7E3 /* ExerciseGuidePatientViewModel.swift */; };
+		9E1B511820D1FF050039D7E3 /* ViewModelProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1B511720D1FF050039D7E3 /* ViewModelProtocols.swift */; };
 		9EB51CD720CF149800271C69 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EB51CD620CF149800271C69 /* SWRevealViewController.m */; };
 		9EB51CD920CF1BA400271C69 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB51CD820CF1BA400271C69 /* HomeViewController.swift */; };
 		9EFD62D7209E6522005AEEE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFD62D6209E6522005AEEE4 /* AppDelegate.swift */; };
@@ -47,6 +52,11 @@
 		66F7D83D1E0BB288BD1A94A9 /* Pods-Motion2Movement.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Motion2Movement.release.xcconfig"; path = "Pods/Target Support Files/Pods-Motion2Movement/Pods-Motion2Movement.release.xcconfig"; sourceTree = "<group>"; };
 		71EC68EE4219F9DCDDCA6820 /* Pods_Motion2MovementTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Motion2MovementTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		982F5803DE91CAEFB3ECE770 /* Pods-Motion2MovementUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Motion2MovementUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Motion2MovementUITests/Pods-Motion2MovementUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9E1B510D20D1F8500039D7E3 /* ExerciseGuideTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseGuideTableViewController.swift; sourceTree = "<group>"; };
+		9E1B511020D1F8E50039D7E3 /* ExerciseGuideTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseGuideTableViewCell.swift; sourceTree = "<group>"; };
+		9E1B511120D1F8E50039D7E3 /* ExerciseGuideTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExerciseGuideTableViewCell.xib; sourceTree = "<group>"; };
+		9E1B511420D1FEDC0039D7E3 /* ExerciseGuidePatientViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseGuidePatientViewModel.swift; sourceTree = "<group>"; };
+		9E1B511720D1FF050039D7E3 /* ViewModelProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelProtocols.swift; sourceTree = "<group>"; };
 		9EB51CD420CF149800271C69 /* Motion2Movement-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Motion2Movement-Bridging-Header.h"; sourceTree = "<group>"; };
 		9EB51CD520CF149800271C69 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		9EB51CD620CF149800271C69 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
@@ -103,6 +113,30 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		9E1B510F20D1F8C00039D7E3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9E1B511020D1F8E50039D7E3 /* ExerciseGuideTableViewCell.swift */,
+				9E1B511120D1F8E50039D7E3 /* ExerciseGuideTableViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9E1B511620D1FEE80039D7E3 /* Protocols and Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9E1B511720D1FF050039D7E3 /* ViewModelProtocols.swift */,
+			);
+			path = "Protocols and Extensions";
+			sourceTree = "<group>";
+		};
+		9E1B511920D1FFFB0039D7E3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		9EAF6C36209E66F300A35850 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -126,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				9EB51CD820CF1BA400271C69 /* HomeViewController.swift */,
+				9E1B510D20D1F8500039D7E3 /* ExerciseGuideTableViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -133,6 +168,7 @@
 		9EAF6C39209E671D00A35850 /* View Models */ = {
 			isa = PBXGroup;
 			children = (
+				9E1B511420D1FEDC0039D7E3 /* ExerciseGuidePatientViewModel.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -172,11 +208,14 @@
 		9EFD62D5209E6522005AEEE4 /* Motion2Movement */ = {
 			isa = PBXGroup;
 			children = (
-				9EB51CD320CF147800271C69 /* SWRevealViewController */,
+				9E1B511920D1FFFB0039D7E3 /* Models */,
+				9E1B511620D1FEE80039D7E3 /* Protocols and Extensions */,
 				9EAF6C37209E670500A35850 /* Storyboards */,
 				9EAF6C36209E66F300A35850 /* Supporting Files */,
+				9EB51CD320CF147800271C69 /* SWRevealViewController */,
 				9EAF6C38209E671300A35850 /* View Controllers */,
 				9EAF6C39209E671D00A35850 /* View Models */,
+				9E1B510F20D1F8C00039D7E3 /* Views */,
 			);
 			path = Motion2Movement;
 			sourceTree = "<group>";
@@ -323,6 +362,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E1B511320D1F8E50039D7E3 /* ExerciseGuideTableViewCell.xib in Resources */,
 				9EFD62E1209E6523005AEEE4 /* LaunchScreen.storyboard in Resources */,
 				9EFD62DE209E6523005AEEE4 /* Assets.xcassets in Resources */,
 				9EFD62DC209E6522005AEEE4 /* Main.storyboard in Resources */,
@@ -496,8 +536,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				9EFD62D7209E6522005AEEE4 /* AppDelegate.swift in Sources */,
+				9E1B511820D1FF050039D7E3 /* ViewModelProtocols.swift in Sources */,
 				9EB51CD720CF149800271C69 /* SWRevealViewController.m in Sources */,
+				9E1B510E20D1F8500039D7E3 /* ExerciseGuideTableViewController.swift in Sources */,
 				9EB51CD920CF1BA400271C69 /* HomeViewController.swift in Sources */,
+				9E1B511220D1F8E50039D7E3 /* ExerciseGuideTableViewCell.swift in Sources */,
+				9E1B511520D1FEDC0039D7E3 /* ExerciseGuidePatientViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -22,7 +22,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="HOME" id="uMb-t8-uHc">
-                        <barButtonItem key="leftBarButtonItem" title="Item" image="menu" id="viX-5Q-JbI"/>
+                        <barButtonItem key="leftBarButtonItem" title="menu" image="menu" id="viX-5Q-JbI"/>
                         <barButtonItem key="rightBarButtonItem" title="Item" image="notifcationbell" id="MmD-Ka-b3o"/>
                     </navigationItem>
                     <connections>
@@ -31,7 +31,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-602" y="958"/>
+            <point key="canvasLocation" x="750" y="-547"/>
         </scene>
         <!--Reveal View Controller-->
         <scene sceneID="P9Q-BA-9L4">
@@ -50,7 +50,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nEy-aU-icK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2228" y="201"/>
+            <point key="canvasLocation" x="-1399" y="-546"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="mU4-oh-wUU">
@@ -109,7 +109,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Q0d-4b-WQt">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Q0d-4b-WQt" userLabel="Care Plan Table View Cell">
                                         <rect key="frame" x="0.0" y="120" width="375" height="55"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Q0d-4b-WQt" id="u4q-5f-0Ix">
@@ -138,8 +138,11 @@
                                                 <constraint firstItem="HKQ-La-gpH" firstAttribute="centerY" secondItem="u4q-5f-0Ix" secondAttribute="centerY" id="fAt-MO-7s9"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="H1k-Uy-KCi" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="EAo-kb-BSX"/>
+                                        </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="jNq-hm-k7p">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="jNq-hm-k7p" userLabel="Exercise Guide Table View Cell">
                                         <rect key="frame" x="0.0" y="175" width="375" height="55"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jNq-hm-k7p" id="LNN-fF-gtM">
@@ -168,8 +171,11 @@
                                                 <constraint firstItem="j6l-9h-1MH" firstAttribute="centerY" secondItem="LNN-fF-gtM" secondAttribute="centerY" id="Tzz-sN-He1"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="RMx-Gz-yVH" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="0sn-8v-G5U"/>
+                                        </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="9fo-DC-NOo">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="9fo-DC-NOo" userLabel="Workout Plan Table View Cell">
                                         <rect key="frame" x="0.0" y="230" width="375" height="55"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9fo-DC-NOo" id="At4-MF-yzs">
@@ -199,7 +205,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Sca-qb-51m">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Sca-qb-51m" userLabel="Graph Table View Cell">
                                         <rect key="frame" x="0.0" y="285" width="375" height="55"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Sca-qb-51m" id="4mS-jn-EIT">
@@ -229,7 +235,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="1iz-Y3-6cz">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="1iz-Y3-6cz" userLabel="Messages Table View Cell">
                                         <rect key="frame" x="0.0" y="340" width="375" height="55"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1iz-Y3-6cz" id="OON-HK-OIK">
@@ -259,7 +265,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="zY6-Dv-PR2">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="zY6-Dv-PR2" userLabel="Device Table View Cell">
                                         <rect key="frame" x="0.0" y="395" width="375" height="55"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zY6-Dv-PR2" id="qJY-jJ-GXf">
@@ -297,7 +303,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="vHj-N1-dmI">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="vHj-N1-dmI" userLabel="Settings Table View Cell">
                                         <rect key="frame" x="0.0" y="505" width="375" height="55"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vHj-N1-dmI" id="GAD-B8-hne">
@@ -327,7 +333,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="mpe-VS-uN4">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="mpe-VS-uN4" userLabel="Help Table View Cell">
                                         <rect key="frame" x="0.0" y="560" width="375" height="55"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mpe-VS-uN4" id="NtI-un-aHd">
@@ -386,7 +392,59 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iZl-vS-WnN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1399" y="959"/>
+            <point key="canvasLocation" x="-47" y="-546"/>
+        </scene>
+        <!--Exercise Guide-->
+        <scene sceneID="gRs-Vb-fBc">
+            <objects>
+                <tableViewController id="BBD-XN-af7" customClass="ExerciseGuideTableViewController" customModule="Motion2Movement" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="S29-p4-5Bl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="exerciseCell" rowHeight="103" id="glK-qz-byc" customClass="ExerciseGuideTableViewCell" customModule="Motion2Movement" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="103"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="glK-qz-byc" id="ZgA-hi-y1F">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="102.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="BBD-XN-af7" id="Nb4-cC-SzG"/>
+                            <outlet property="delegate" destination="BBD-XN-af7" id="jp0-TG-hSG"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Exercise Guide" id="xtJ-uu-kMk">
+                        <barButtonItem key="leftBarButtonItem" title="menu" image="menu" id="6V9-Fw-4eK"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="menuButton" destination="6V9-Fw-4eK" id="ElD-PG-Ufh"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CPq-9Z-IkR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="749.60000000000002" y="198.35082458770617"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="J5h-ac-ZyC">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="RMx-Gz-yVH" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Ydc-Sw-Jeb">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BBD-XN-af7" kind="relationship" relationship="rootViewController" id="uEc-KF-lHf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IpL-Ex-YJe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-47" y="199"/>
         </scene>
     </scenes>
     <resources>
@@ -402,4 +460,7 @@
         <image name="menu" width="22" height="16"/>
         <image name="notifcationbell" width="26" height="26"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="nOf-4d-x5i"/>
+    </inferredMetricsTieBreakers>
 </document>

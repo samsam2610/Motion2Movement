@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="exerciseCell" rowHeight="132" id="KGk-i7-Jjw" customClass="ExerciseGuideTableViewCell" customModule="Motion2Movement" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="446" height="132"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="446" height="131.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Exercise Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xlx-gG-z8X">
+                        <rect key="frame" x="28" y="19" width="356" height="27.5"/>
+                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
+                        <color key="textColor" red="0.20392156859999999" green="0.45882352939999999" blue="0.71372549019999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xHy-bi-33r">
+                        <rect key="frame" x="392" y="52" width="26" height="26"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="26" id="Uog-eL-xU7"/>
+                            <constraint firstAttribute="width" constant="26" id="did-dq-GwA"/>
+                        </constraints>
+                        <state key="normal" image="checkbox"/>
+                        <state key="selected" image="checkboxfill"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3 sets      8 reps      100 ROM      8 min" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8f0-Eh-Nxt">
+                        <rect key="frame" x="28" y="62.5" width="356" height="20.5"/>
+                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="xHy-bi-33r" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="0n1-kH-Icn"/>
+                    <constraint firstItem="xHy-bi-33r" firstAttribute="leading" secondItem="8f0-Eh-Nxt" secondAttribute="trailing" constant="8" id="KgM-xE-jhe"/>
+                    <constraint firstItem="8f0-Eh-Nxt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="8" id="Lzq-S2-0Ie"/>
+                    <constraint firstItem="Xlx-gG-z8X" firstAttribute="trailing" secondItem="xHy-bi-33r" secondAttribute="leading" constant="-8" id="NOA-v5-cMf"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="xHy-bi-33r" secondAttribute="trailing" constant="8" id="T8i-aH-xVr"/>
+                    <constraint firstItem="Xlx-gG-z8X" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="8" id="bI5-tj-pxg"/>
+                    <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="8f0-Eh-Nxt" secondAttribute="bottom" constant="8" id="iY3-lk-aJW"/>
+                    <constraint firstItem="Xlx-gG-z8X" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="8" id="lqB-3q-fNE"/>
+                    <constraint firstItem="8f0-Eh-Nxt" firstAttribute="top" secondItem="Xlx-gG-z8X" secondAttribute="bottom" constant="16" id="xa6-2F-vru"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="checkButton" destination="xHy-bi-33r" id="qs0-kn-btW"/>
+                <outlet property="exerciseNameLabel" destination="Xlx-gG-z8X" id="KYb-b7-5Tg"/>
+                <outlet property="exerciseStatusLabel" destination="8f0-Eh-Nxt" id="8yb-fZ-yjA"/>
+            </connections>
+            <point key="canvasLocation" x="-85" y="37"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="checkbox" width="26" height="26"/>
+        <image name="checkboxfill" width="26" height="26"/>
+    </resources>
+</document>
