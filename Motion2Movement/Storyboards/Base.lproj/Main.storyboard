@@ -18,6 +18,15 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Start" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fNX-KR-JnC">
+                                <rect key="frame" x="166" y="497" width="38" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -26,7 +35,7 @@
                         <barButtonItem key="rightBarButtonItem" title="Item" image="notifcationbell" id="MmD-Ka-b3o"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="menuButton" destination="viX-5Q-JbI" id="qjv-FW-aPH"/>
+                        <outlet property="exerciseLabel" destination="fNX-KR-JnC" id="F8c-Wu-0ll"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -301,6 +310,28 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tkx-uX-A0y" id="A4r-sG-3zJ">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="55"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="smile" translatesAutoresizingMaskIntoConstraints="NO" id="Dpa-44-X1D">
+                                                    <rect key="frame" x="32" y="10" width="35" height="35"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="35" id="Har-bD-0SL"/>
+                                                        <constraint firstAttribute="height" constant="35" id="tc8-sR-f4A"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Patient List" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mtd-aG-Z2j">
+                                                    <rect key="frame" x="99" y="17" width="212" height="20"/>
+                                                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
+                                                    <color key="textColor" red="0.3921568627" green="0.3921568627" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="mtd-aG-Z2j" firstAttribute="leading" secondItem="Dpa-44-X1D" secondAttribute="trailing" constant="32" id="FtY-Ph-b6E"/>
+                                                <constraint firstAttribute="trailing" secondItem="mtd-aG-Z2j" secondAttribute="trailing" constant="64" id="Ud9-mZ-Dgb"/>
+                                                <constraint firstItem="mtd-aG-Z2j" firstAttribute="centerY" secondItem="A4r-sG-3zJ" secondAttribute="centerY" id="cnn-to-DcR"/>
+                                                <constraint firstItem="Dpa-44-X1D" firstAttribute="centerY" secondItem="A4r-sG-3zJ" secondAttribute="centerY" id="pdC-V6-4G2"/>
+                                                <constraint firstItem="Dpa-44-X1D" firstAttribute="leading" secondItem="A4r-sG-3zJ" secondAttribute="leading" constant="32" id="xCx-4h-Aof"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="vHj-N1-dmI" userLabel="Settings Table View Cell">
@@ -408,15 +439,31 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Exercise Guide" id="xtJ-uu-kMk">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="9x9-lC-pwE"/>
                         <barButtonItem key="leftBarButtonItem" title="menu" image="menu" id="6V9-Fw-4eK"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="menuButton" destination="6V9-Fw-4eK" id="ElD-PG-Ufh"/>
+                        <segue destination="I6w-CM-tcg" kind="show" identifier="exerciseSegue" id="Bi7-5e-JHy"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CPq-9Z-IkR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="749.60000000000002" y="198.35082458770617"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Pbr-Pt-Aiq">
+            <objects>
+                <viewController id="I6w-CM-tcg" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EUs-AP-KaB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Jt9-M5-sSv"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s4Q-uG-dko" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1614" y="198"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="J5h-ac-ZyC">
@@ -449,6 +496,7 @@
         <image name="logo" width="344" height="51"/>
         <image name="menu" width="22" height="16"/>
         <image name="notifcationbell" width="26" height="26"/>
+        <image name="smile" width="88" height="88"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="EAo-kb-BSX"/>

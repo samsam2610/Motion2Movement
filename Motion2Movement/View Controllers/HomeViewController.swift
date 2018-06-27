@@ -10,19 +10,27 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
-    @IBOutlet weak var menuButton: UIBarButtonItem!
+    @IBOutlet weak var exerciseLabel: UILabel!
+
+    let appDelegate = UIApplication.shared.delegate as! AppDelegate
+    var exerciseViewModel: ExerciseGuideViewModel?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        SWRevealViewControllerSettings.setUpSideBar(self)
+    }
 
-        if revealViewController() != nil {
-            revealViewController().rearViewRevealWidth = self.view.frame.width - 64
-            menuButton.target = revealViewController()
-            menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        exerciseViewModel = appDelegate.exerciseViewModel
 
-            view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        exerciseLabel.text = "\(exerciseViewModel?.getSelectedExercise()?.exerciseName ?? "No exercise") selected"
+    }
 
-        }
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+
+         exerciseViewModel = nil
     }
 
 

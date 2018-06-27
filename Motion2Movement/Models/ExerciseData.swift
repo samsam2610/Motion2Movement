@@ -28,7 +28,7 @@ struct ExerciseData: ExerciseInfo, ExerciseParam, Codable {
         case legAngle_max = "leg_angle_max"
 //        case instructions = "instructions"
     }
-    
+
     init(toJson exerciseName: String, _ description: String?, _ thighAngle_min: Int16, _ thighAngle_max: Int16, _ legAngle_min: Int16, _ legAngle_max: Int16) {
         self.exerciseName = exerciseName
         self.description = description

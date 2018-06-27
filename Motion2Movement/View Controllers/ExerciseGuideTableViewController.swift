@@ -10,34 +10,22 @@ import UIKit
 
 class ExerciseGuideTableViewController: UITableViewController {
 
-    @IBOutlet weak var menuButton: UIBarButtonItem!
-
     var viewModel: ExerciseGuideViewModel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        if revealViewController() != nil {
-            revealViewController().rearViewRevealWidth = self.view.frame.width - 64
-            menuButton.target = revealViewController()
-            menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
-
-            view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
-
-        }
+        SWRevealViewControllerSettings.setUpSideBar(self)
 
         let nib = UINib.init(nibName: "ExerciseGuideTableViewCell", bundle: nil)
         self.tableView.register(nib, forCellReuseIdentifier: "exerciseCell")
 
-        if true {
-            viewModel = ExerciseGuidePatientViewModel()
-            viewModel.loadDummyData() {
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+
+        viewModel = appDelegate.exerciseViewModel
+
+        viewModel.loadDummyData() {
             self.tableView.reloadData()
-            }
-
         }
-
-        
 
         // Uncomment the following line to preserve selection between presentations
         self.clearsSelectionOnViewWillAppear = false
@@ -51,26 +39,38 @@ class ExerciseGuideTableViewController: UITableViewController {
     // MARK: - Table view data source
 
 //    override func numberOfSections(in tableView: UITableView) -> Int {
-//        // #warning Incomplete implementation, return the number of sections
 //        return 0
 //    }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
         return viewModel.exercises.count
     }
-
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "exerciseCell", for: indexPath) as! ExerciseGuideTableViewCell
 
+       let exercise = viewModel.getExerciseName(atIndexPath: indexPath)
 
-        cell.exerciseNameLabel.text = viewModel.getExerciseName(atRow: indexPath)
+        cell.exerciseNameLabel.text = exercise.exerciseName
+        cell.checkButton.tag = indexPath.row
+        cell.checkButton.isSelected = viewModel.cellIsSelected(exercise)
+        cell.checkButton.addTarget(self, action: #selector(selectExercise(_:)), for: .touchUpInside)
 
         return cell
     }
 
+    @objc func selectExercise(_ sender: UIButton) {
+        print(sender.state)
+        if sender.state == UIControlState(rawValue: 5) {
+            viewModel.setSelectedExercise(nil)
+        } else {
+            viewModel.setSelectedExercise(viewModel.exercises[sender.tag])
+        }
 
+        print(viewModel.selectedExercise ?? "Not selected")
+        
+        self.tableView.reloadData()
+    }
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
@@ -79,17 +79,17 @@ class ExerciseGuideTableViewController: UITableViewController {
     }
     */
 
-    /*
+
     // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
+//            tableView.deleteRows(at: [indexPath], with: .fade)
         } else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
         }    
     }
-    */
+    
 
     /*
     // Override to support rearranging the table view.

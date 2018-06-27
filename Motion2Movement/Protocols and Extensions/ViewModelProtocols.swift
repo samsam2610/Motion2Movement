@@ -9,8 +9,12 @@
 import Foundation
 
 protocol ExerciseGuideViewModel {
-    var exercises: [String] { get set }
+    var exercises: [ExerciseData] { get set }
+    var selectedExercise: ExerciseData? { get set }
 
     func loadDummyData(_ completion: @escaping () -> ())
-    func getExerciseName(atRow indexPath: IndexPath) -> String
+    func getExerciseName(atIndexPath indexPath: IndexPath) -> ExerciseData
+    func cellIsSelected(_: ExerciseData) -> Bool
+    func setSelectedExercise(_: ExerciseData?)
+    func getSelectedExercise() -> ExerciseData?
 }

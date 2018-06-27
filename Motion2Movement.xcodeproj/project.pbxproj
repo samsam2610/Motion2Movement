@@ -22,6 +22,11 @@
 		9E1B512B20D210070039D7E3 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1B512120D210070039D7E3 /* Activity.swift */; };
 		9E1B512C20D210070039D7E3 /* AuthData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1B512220D210070039D7E3 /* AuthData.swift */; };
 		9E1B512D20D210070039D7E3 /* ExerciseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1B512320D210070039D7E3 /* ExerciseData.swift */; };
+		9EA0D07020E41E0200AF0BB7 /* SWRevealViewControllerSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA0D06F20E41E0200AF0BB7 /* SWRevealViewControllerSettings.swift */; };
+		9EAD85C020DF60820088FCB8 /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAD85BF20DF60820088FCB8 /* NetworkHelper.swift */; };
+		9EAD85C320DF609C0088FCB8 /* AssignmentAPIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAD85C120DF609C0088FCB8 /* AssignmentAPIHelper.swift */; };
+		9EAD85C420DF609C0088FCB8 /* ExerciseAPIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAD85C220DF609C0088FCB8 /* ExerciseAPIHelper.swift */; };
+		9EAD85C620DF60BD0088FCB8 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAD85C520DF60BD0088FCB8 /* AppError.swift */; };
 		9EB51CD720CF149800271C69 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EB51CD620CF149800271C69 /* SWRevealViewController.m */; };
 		9EB51CD920CF1BA400271C69 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB51CD820CF1BA400271C69 /* HomeViewController.swift */; };
 		9EFD62D7209E6522005AEEE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFD62D6209E6522005AEEE4 /* AppDelegate.swift */; };
@@ -70,6 +75,11 @@
 		9E1B512120D210070039D7E3 /* Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		9E1B512220D210070039D7E3 /* AuthData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthData.swift; sourceTree = "<group>"; };
 		9E1B512320D210070039D7E3 /* ExerciseData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseData.swift; sourceTree = "<group>"; };
+		9EA0D06F20E41E0200AF0BB7 /* SWRevealViewControllerSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWRevealViewControllerSettings.swift; sourceTree = "<group>"; };
+		9EAD85BF20DF60820088FCB8 /* NetworkHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
+		9EAD85C120DF609C0088FCB8 /* AssignmentAPIHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssignmentAPIHelper.swift; sourceTree = "<group>"; };
+		9EAD85C220DF609C0088FCB8 /* ExerciseAPIHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseAPIHelper.swift; sourceTree = "<group>"; };
+		9EAD85C520DF60BD0088FCB8 /* AppError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
 		9EB51CD420CF149800271C69 /* Motion2Movement-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Motion2Movement-Bridging-Header.h"; sourceTree = "<group>"; };
 		9EB51CD520CF149800271C69 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		9EB51CD620CF149800271C69 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
@@ -174,9 +184,21 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		9E9E57BC20E4232300E37FDC /* App */ = {
+			isa = PBXGroup;
+			children = (
+				9EFD62D6209E6522005AEEE4 /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
 		9EAD85BE20DF5EC60088FCB8 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				9EAD85C520DF60BD0088FCB8 /* AppError.swift */,
+				9EAD85C120DF609C0088FCB8 /* AssignmentAPIHelper.swift */,
+				9EAD85C220DF609C0088FCB8 /* ExerciseAPIHelper.swift */,
+				9EAD85BF20DF60820088FCB8 /* NetworkHelper.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -184,7 +206,6 @@
 		9EAF6C36209E66F300A35850 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				9EFD62D6209E6522005AEEE4 /* AppDelegate.swift */,
 				9EFD62E2209E6523005AEEE4 /* Info.plist */,
 				9EFD62DD209E6523005AEEE4 /* Assets.xcassets */,
 			);
@@ -223,6 +244,7 @@
 				9EB51CD520CF149800271C69 /* SWRevealViewController.h */,
 				9EB51CD620CF149800271C69 /* SWRevealViewController.m */,
 				9EB51CD420CF149800271C69 /* Motion2Movement-Bridging-Header.h */,
+				9EA0D06F20E41E0200AF0BB7 /* SWRevealViewControllerSettings.swift */,
 			);
 			path = SWRevealViewController;
 			sourceTree = "<group>";
@@ -252,8 +274,9 @@
 		9EFD62D5209E6522005AEEE4 /* Motion2Movement */ = {
 			isa = PBXGroup;
 			children = (
-				9EAD85BE20DF5EC60088FCB8 /* Networking */,
+				9E9E57BC20E4232300E37FDC /* App */,
 				9E1B511920D1FFFB0039D7E3 /* Models */,
+				9EAD85BE20DF5EC60088FCB8 /* Networking */,
 				9E1B511620D1FEE80039D7E3 /* Protocols and Extensions */,
 				9EAF6C37209E670500A35850 /* Storyboards */,
 				9EAF6C36209E66F300A35850 /* Supporting Files */,
@@ -569,13 +592,18 @@
 			files = (
 				9E1B512B20D210070039D7E3 /* Activity.swift in Sources */,
 				9EFD62D7209E6522005AEEE4 /* AppDelegate.swift in Sources */,
+				9EAD85C620DF60BD0088FCB8 /* AppError.swift in Sources */,
 				9E1B512420D210070039D7E3 /* Exercise.swift in Sources */,
+				9EA0D07020E41E0200AF0BB7 /* SWRevealViewControllerSettings.swift in Sources */,
 				9E1B511820D1FF050039D7E3 /* ViewModelProtocols.swift in Sources */,
 				9E1B512720D210070039D7E3 /* Assignment.swift in Sources */,
 				9E1B512D20D210070039D7E3 /* ExerciseData.swift in Sources */,
+				9EAD85C420DF609C0088FCB8 /* ExerciseAPIHelper.swift in Sources */,
 				9E1B512C20D210070039D7E3 /* AuthData.swift in Sources */,
 				9E1B512520D210070039D7E3 /* PatientData.swift in Sources */,
+				9EAD85C020DF60820088FCB8 /* NetworkHelper.swift in Sources */,
 				9EB51CD720CF149800271C69 /* SWRevealViewController.m in Sources */,
+				9EAD85C320DF609C0088FCB8 /* AssignmentAPIHelper.swift in Sources */,
 				9E1B510E20D1F8500039D7E3 /* ExerciseGuideTableViewController.swift in Sources */,
 				9E1B512920D210070039D7E3 /* LoginData.swift in Sources */,
 				9E1B512620D210070039D7E3 /* TherapistData.swift in Sources */,
