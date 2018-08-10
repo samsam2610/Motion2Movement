@@ -11,6 +11,7 @@ import CoreBluetooth
 
 class DeviceViewController: UIViewController {
 
+    // MARK: - View Overrides
     override func viewDidLoad() {
         super.viewDidLoad()
 

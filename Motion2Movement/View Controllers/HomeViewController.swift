@@ -10,6 +10,7 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
+    // MARK: - Properties and Outlets
     @IBOutlet weak var startButton: UIButton!
     @IBOutlet weak var selectButton: UIButton!
     @IBOutlet weak var clearButton: UIButton!
@@ -17,9 +18,11 @@ class HomeViewController: UIViewController {
 
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     var exerciseViewModel: ExerciseGuideViewModel!
-    
+
+    // MARK: - View Overrides
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         SWRevealViewControllerSettings.setUpSideBar(self)
         exerciseViewModel = appDelegate.exerciseViewModel
     }
@@ -29,6 +32,7 @@ class HomeViewController: UIViewController {
         checkName()
     }
 
+    // MARK: - Functions and Methods
     @IBAction func clearButtonTapped(_ sender: UIButton) {
         exerciseViewModel.setSelectedExercise(nil)
         checkName()
@@ -50,12 +54,16 @@ class HomeViewController: UIViewController {
 
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "selectSegue" {
-            let exerciseGuide = segue.destination as! ExerciseGuideTableViewController
+        switch segue.identifier {
+        case "selectSegue":
+            guard let exerciseGuide = segue.destination as? ExerciseGuideTableViewController else { return }
             exerciseGuide.didAppearFromSelectSegue = true
+        case "performSegue":
+            guard let performView = segue.destination as? PerformExerciseViewController else { return }
+            performView.exercise = exerciseViewModel.selectedExercise
+        default:
+            break
         }
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
     }
 
 }

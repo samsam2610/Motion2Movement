@@ -12,24 +12,32 @@ class PerformExerciseViewController: UIViewController {
 
     // MARK: - Properties and Outlets
     @IBOutlet weak var circularProgress: KDCircularProgress!
+    @IBOutlet weak var exerciseLabel: UILabel!
+    @IBOutlet weak var timerLabel: UILabel!
 
-    // MARK: - viewDidLoad()
+    var exercise: ExerciseData!
+    var timer = Timer()
+
+    // MARK: - View Overrides
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        setUpView()
+
         setUpCircularProgress()
-
         animateCircularProgress()
-
     }
 
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
-
-
     }
 
     // MARK: - Functions and Methods
+    fileprivate func setUpView() {
+        exerciseLabel.text = exercise.exerciseName
+    }
+
+    // MARK: Circular Progress Functions
     fileprivate func setUpCircularProgress() {
         circularProgress.startAngle = -90
         circularProgress.progressThickness = 0.2
@@ -38,7 +46,7 @@ class PerformExerciseViewController: UIViewController {
         circularProgress.gradientRotateSpeed = 2
         circularProgress.roundedCorners = false
         circularProgress.glowMode = .noGlow
-//        circularProgress.glowAmount = 0.9
+        // circularProgress.glowAmount = 0.9
         circularProgress.set(colors: UIColor.cyan, UIColor.blue)
     }
 
@@ -48,6 +56,14 @@ class PerformExerciseViewController: UIViewController {
         }
 
         circularProgress.animate(fromAngle: 0.0, toAngle: 360.0, duration: TimeInterval(exactly: 30)!, completion: completion)
+    }
+
+     // MARK: - Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "instructionsSegue" {
+            guard let detailView = segue.destination as? ExerciseDetailViewController else { return }
+            detailView.exercise = exercise
+        }
     }
 
 }

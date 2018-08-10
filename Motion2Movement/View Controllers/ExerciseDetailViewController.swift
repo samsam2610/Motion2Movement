@@ -13,8 +13,7 @@ class ExerciseDetailViewController: UIViewController {
     // MARK: - Properties and Outlets
     var exercise: ExerciseData!
 
-
-    // MARK: - viewDidLoad()
+    // MARK: - View Overrides
     override func viewDidLoad() {
         super.viewDidLoad()
 

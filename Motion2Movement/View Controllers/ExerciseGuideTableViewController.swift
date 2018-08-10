@@ -14,7 +14,8 @@ class ExerciseGuideTableViewController: UITableViewController {
     var viewModel: ExerciseGuideViewModel!
     var didAppearFromSelectSegue: Bool?
     var selectedIndexPath: IndexPath?
-    
+
+    // MARK: - View Overrides
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -47,10 +48,12 @@ class ExerciseGuideTableViewController: UITableViewController {
         print(sender.state)
         if sender.state == UIControlState(rawValue: 5) {
             viewModel.setSelectedExercise(nil)
-             showToast(message: "Deselected")
+             showToast("Deselected")
         } else {
-            viewModel.setSelectedExercise(viewModel.exercises[sender.tag])
-            showToast(message: "\(viewModel.exercises[sender.tag].exerciseName) selected")
+            let checkedExercise = viewModel.exercises[sender.tag]
+
+            viewModel.setSelectedExercise(checkedExercise)
+            showToast("\(checkedExercise.exerciseName) selected")
         }
 
         print(viewModel.selectedExercise ?? "Not selected")
