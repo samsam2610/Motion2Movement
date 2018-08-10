@@ -22,6 +22,11 @@
 		9E1B512B20D210070039D7E3 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1B512120D210070039D7E3 /* Activity.swift */; };
 		9E1B512C20D210070039D7E3 /* AuthData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1B512220D210070039D7E3 /* AuthData.swift */; };
 		9E1B512D20D210070039D7E3 /* ExerciseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1B512320D210070039D7E3 /* ExerciseData.swift */; };
+		9E670D98211D452900A9E165 /* KDCircularProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E670D97211D452900A9E165 /* KDCircularProgress.swift */; };
+		9E670D9B211D475000A9E165 /* PerformExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E670D9A211D475000A9E165 /* PerformExerciseViewController.swift */; };
+		9E670D9D211D669A00A9E165 /* ExerciseDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E670D9C211D669A00A9E165 /* ExerciseDetailViewController.swift */; };
+		9E670DA0211D6B5F00A9E165 /* UIViewController+ToastMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E670D9F211D6B5F00A9E165 /* UIViewController+ToastMessage.swift */; };
+		9E9E57BE20E4599900E37FDC /* DeviceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9E57BD20E4599900E37FDC /* DeviceViewController.swift */; };
 		9EA0D07020E41E0200AF0BB7 /* SWRevealViewControllerSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA0D06F20E41E0200AF0BB7 /* SWRevealViewControllerSettings.swift */; };
 		9EAD85C020DF60820088FCB8 /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAD85BF20DF60820088FCB8 /* NetworkHelper.swift */; };
 		9EAD85C320DF609C0088FCB8 /* AssignmentAPIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAD85C120DF609C0088FCB8 /* AssignmentAPIHelper.swift */; };
@@ -75,6 +80,11 @@
 		9E1B512120D210070039D7E3 /* Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		9E1B512220D210070039D7E3 /* AuthData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthData.swift; sourceTree = "<group>"; };
 		9E1B512320D210070039D7E3 /* ExerciseData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseData.swift; sourceTree = "<group>"; };
+		9E670D97211D452900A9E165 /* KDCircularProgress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDCircularProgress.swift; sourceTree = "<group>"; };
+		9E670D9A211D475000A9E165 /* PerformExerciseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformExerciseViewController.swift; sourceTree = "<group>"; };
+		9E670D9C211D669A00A9E165 /* ExerciseDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDetailViewController.swift; sourceTree = "<group>"; };
+		9E670D9F211D6B5F00A9E165 /* UIViewController+ToastMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+ToastMessage.swift"; sourceTree = "<group>"; };
+		9E9E57BD20E4599900E37FDC /* DeviceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceViewController.swift; sourceTree = "<group>"; };
 		9EA0D06F20E41E0200AF0BB7 /* SWRevealViewControllerSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWRevealViewControllerSettings.swift; sourceTree = "<group>"; };
 		9EAD85BF20DF60820088FCB8 /* NetworkHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
 		9EAD85C120DF609C0088FCB8 /* AssignmentAPIHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssignmentAPIHelper.swift; sourceTree = "<group>"; };
@@ -184,12 +194,45 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		9E670D99211D453300A9E165 /* KDCircularProgress */ = {
+			isa = PBXGroup;
+			children = (
+				9E670D97211D452900A9E165 /* KDCircularProgress.swift */,
+			);
+			path = KDCircularProgress;
+			sourceTree = "<group>";
+		};
+		9E670D9E211D6B3100A9E165 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9E670D9F211D6B5F00A9E165 /* UIViewController+ToastMessage.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9E670DA1211D6C6B00A9E165 /* Imported */ = {
+			isa = PBXGroup;
+			children = (
+				9E670D99211D453300A9E165 /* KDCircularProgress */,
+				9EB51CD320CF147800271C69 /* SWRevealViewController */,
+			);
+			path = Imported;
+			sourceTree = "<group>";
+		};
 		9E9E57BC20E4232300E37FDC /* App */ = {
 			isa = PBXGroup;
 			children = (
 				9EFD62D6209E6522005AEEE4 /* AppDelegate.swift */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		9E9E57BF20E45A2B00E37FDC /* Patient Side */ = {
+			isa = PBXGroup;
+			children = (
+				9E1B511420D1FEDC0039D7E3 /* ExerciseGuidePatientViewModel.swift */,
+			);
+			path = "Patient Side";
 			sourceTree = "<group>";
 		};
 		9EAD85BE20DF5EC60088FCB8 /* Networking */ = {
@@ -206,6 +249,7 @@
 		9EAF6C36209E66F300A35850 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9E670DA1211D6C6B00A9E165 /* Imported */,
 				9EFD62E2209E6523005AEEE4 /* Info.plist */,
 				9EFD62DD209E6523005AEEE4 /* Assets.xcassets */,
 			);
@@ -215,8 +259,8 @@
 		9EAF6C37209E670500A35850 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				9EFD62DA209E6522005AEEE4 /* Main.storyboard */,
 				9EFD62DF209E6523005AEEE4 /* LaunchScreen.storyboard */,
+				9EFD62DA209E6522005AEEE4 /* Main.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -224,8 +268,11 @@
 		9EAF6C38209E671300A35850 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				9EB51CD820CF1BA400271C69 /* HomeViewController.swift */,
+				9E9E57BD20E4599900E37FDC /* DeviceViewController.swift */,
+				9E670D9C211D669A00A9E165 /* ExerciseDetailViewController.swift */,
 				9E1B510D20D1F8500039D7E3 /* ExerciseGuideTableViewController.swift */,
+				9EB51CD820CF1BA400271C69 /* HomeViewController.swift */,
+				9E670D9A211D475000A9E165 /* PerformExerciseViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -233,7 +280,7 @@
 		9EAF6C39209E671D00A35850 /* View Models */ = {
 			isa = PBXGroup;
 			children = (
-				9E1B511420D1FEDC0039D7E3 /* ExerciseGuidePatientViewModel.swift */,
+				9E9E57BF20E45A2B00E37FDC /* Patient Side */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -241,9 +288,9 @@
 		9EB51CD320CF147800271C69 /* SWRevealViewController */ = {
 			isa = PBXGroup;
 			children = (
+				9EB51CD420CF149800271C69 /* Motion2Movement-Bridging-Header.h */,
 				9EB51CD520CF149800271C69 /* SWRevealViewController.h */,
 				9EB51CD620CF149800271C69 /* SWRevealViewController.m */,
-				9EB51CD420CF149800271C69 /* Motion2Movement-Bridging-Header.h */,
 				9EA0D06F20E41E0200AF0BB7 /* SWRevealViewControllerSettings.swift */,
 			);
 			path = SWRevealViewController;
@@ -275,12 +322,12 @@
 			isa = PBXGroup;
 			children = (
 				9E9E57BC20E4232300E37FDC /* App */,
+				9E670D9E211D6B3100A9E165 /* Extensions */,
 				9E1B511920D1FFFB0039D7E3 /* Models */,
 				9EAD85BE20DF5EC60088FCB8 /* Networking */,
 				9E1B511620D1FEE80039D7E3 /* Protocols and Extensions */,
 				9EAF6C37209E670500A35850 /* Storyboards */,
 				9EAF6C36209E66F300A35850 /* Supporting Files */,
-				9EB51CD320CF147800271C69 /* SWRevealViewController */,
 				9EAF6C38209E671300A35850 /* View Controllers */,
 				9EAF6C39209E671D00A35850 /* View Models */,
 				9E1B510F20D1F8C00039D7E3 /* Views */,
@@ -591,13 +638,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E1B512B20D210070039D7E3 /* Activity.swift in Sources */,
+				9E670DA0211D6B5F00A9E165 /* UIViewController+ToastMessage.swift in Sources */,
 				9EFD62D7209E6522005AEEE4 /* AppDelegate.swift in Sources */,
 				9EAD85C620DF60BD0088FCB8 /* AppError.swift in Sources */,
 				9E1B512420D210070039D7E3 /* Exercise.swift in Sources */,
+				9E670D98211D452900A9E165 /* KDCircularProgress.swift in Sources */,
 				9EA0D07020E41E0200AF0BB7 /* SWRevealViewControllerSettings.swift in Sources */,
+				9E670D9B211D475000A9E165 /* PerformExerciseViewController.swift in Sources */,
 				9E1B511820D1FF050039D7E3 /* ViewModelProtocols.swift in Sources */,
 				9E1B512720D210070039D7E3 /* Assignment.swift in Sources */,
 				9E1B512D20D210070039D7E3 /* ExerciseData.swift in Sources */,
+				9E9E57BE20E4599900E37FDC /* DeviceViewController.swift in Sources */,
+				9E670D9D211D669A00A9E165 /* ExerciseDetailViewController.swift in Sources */,
 				9EAD85C420DF609C0088FCB8 /* ExerciseAPIHelper.swift in Sources */,
 				9E1B512C20D210070039D7E3 /* AuthData.swift in Sources */,
 				9E1B512520D210070039D7E3 /* PatientData.swift in Sources */,

@@ -10,10 +10,14 @@ import UIKit
 
 class ExerciseGuideTableViewController: UITableViewController {
 
+    // MARK: - Properties and Outlets
     var viewModel: ExerciseGuideViewModel!
-
+    var didAppearFromSelectSegue: Bool?
+    var selectedIndexPath: IndexPath?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+
         SWRevealViewControllerSettings.setUpSideBar(self)
 
         let nib = UINib.init(nibName: "ExerciseGuideTableViewCell", bundle: nil)
@@ -32,9 +36,26 @@ class ExerciseGuideTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
-        
+
+        if let _ = didAppearFromSelectSegue {
+            self.title = "Select Exercise"
+        }
     }
 
+    // MARK: - Functions and Methods
+    @objc func selectExercise(_ sender: UIButton) {
+        print(sender.state)
+        if sender.state == UIControlState(rawValue: 5) {
+            viewModel.setSelectedExercise(nil)
+        } else {
+            viewModel.setSelectedExercise(viewModel.exercises[sender.tag])
+            showToast(message: "\(viewModel.exercises[sender.tag].exerciseName) selected")
+        }
+
+        print(viewModel.selectedExercise ?? "Not selected")
+
+        self.tableView.reloadData()
+    }
 
     // MARK: - Table view data source
 
@@ -53,24 +74,28 @@ class ExerciseGuideTableViewController: UITableViewController {
 
         cell.exerciseNameLabel.text = exercise.exerciseName
         cell.checkButton.tag = indexPath.row
+
+        // Show that exercise is selected in cell.
         cell.checkButton.isSelected = viewModel.cellIsSelected(exercise)
         cell.checkButton.addTarget(self, action: #selector(selectExercise(_:)), for: .touchUpInside)
 
         return cell
     }
 
-    @objc func selectExercise(_ sender: UIButton) {
-        print(sender.state)
-        if sender.state == UIControlState(rawValue: 5) {
-            viewModel.setSelectedExercise(nil)
-        } else {
-            viewModel.setSelectedExercise(viewModel.exercises[sender.tag])
-        }
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let _ = didAppearFromSelectSegue {
+            let exerciseName = viewModel.getExerciseName(atIndexPath: indexPath)
 
-        print(viewModel.selectedExercise ?? "Not selected")
-        
-        self.tableView.reloadData()
+            viewModel.setSelectedExercise(exerciseName)
+
+            self.navigationController?.popViewController(animated: true)
+        } else {
+            // TODO: Perform Segue to Exercise Info
+            selectedIndexPath = indexPath
+            performSegue(withIdentifier: "exerciseSegue", sender: self)
+        }
     }
+
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
@@ -106,14 +131,13 @@ class ExerciseGuideTableViewController: UITableViewController {
     }
     */
 
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "exerciseSegue", let detailView = segue.destination as? ExerciseDetailViewController, let indexPath = selectedIndexPath {
+            detailView.exercise = viewModel.getExerciseName(atIndexPath: indexPath)
+        }
     }
-    */
+
 
 }

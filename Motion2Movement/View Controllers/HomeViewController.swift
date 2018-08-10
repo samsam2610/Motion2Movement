@@ -10,38 +10,52 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
+    @IBOutlet weak var startButton: UIButton!
+    @IBOutlet weak var selectButton: UIButton!
+    @IBOutlet weak var clearButton: UIButton!
     @IBOutlet weak var exerciseLabel: UILabel!
 
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
-    var exerciseViewModel: ExerciseGuideViewModel?
+    var exerciseViewModel: ExerciseGuideViewModel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         SWRevealViewControllerSettings.setUpSideBar(self)
+        exerciseViewModel = appDelegate.exerciseViewModel
     }
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        exerciseViewModel = appDelegate.exerciseViewModel
-
-        exerciseLabel.text = "\(exerciseViewModel?.getSelectedExercise()?.exerciseName ?? "No exercise") selected"
+        checkName()
     }
 
-    override func viewDidDisappear(_ animated: Bool) {
-        super.viewDidDisappear(animated)
-
-         exerciseViewModel = nil
+    @IBAction func clearButtonTapped(_ sender: UIButton) {
+        exerciseViewModel.setSelectedExercise(nil)
+        checkName()
     }
 
+    func checkName() {
+        if let exercise = exerciseViewModel.getSelectedExercise()?.exerciseName {
+            exerciseLabel.text = "\(exercise) selected"
+            startButton.isHidden = false
+            selectButton.isHidden = true
+            clearButton.isHidden = false
+        } else {
+            exerciseLabel.text = "No exercise selected"
+            startButton.isHidden = true
+            selectButton.isHidden = false
+            clearButton.isHidden = true
+        }
+    }
 
-    /*
     // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "selectSegue" {
+            let exerciseGuide = segue.destination as! ExerciseGuideTableViewController
+            exerciseGuide.didAppearFromSelectSegue = true
+        }
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }
-    */
 
 }
