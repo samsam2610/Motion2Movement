@@ -47,6 +47,7 @@ class ExerciseGuideTableViewController: UITableViewController {
         print(sender.state)
         if sender.state == UIControlState(rawValue: 5) {
             viewModel.setSelectedExercise(nil)
+             showToast(message: "Deselected")
         } else {
             viewModel.setSelectedExercise(viewModel.exercises[sender.tag])
             showToast(message: "\(viewModel.exercises[sender.tag].exerciseName) selected")
