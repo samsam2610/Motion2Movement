@@ -105,7 +105,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2xY-RG-2s0" customClass="KDCircularProgress" customModule="Motion2Movement" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Eqd-W1-6VV" userLabel="Set Circular Progress" customClass="KDCircularProgress" customModule="Motion2Movement" customModuleProvider="target">
+                                <rect key="frame" x="41.5" y="187.5" width="292.5" height="292.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Eqd-W1-6VV" secondAttribute="height" multiplier="1:1" id="ums-Ni-ycY"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2xY-RG-2s0" userLabel="Rep Circular Progress" customClass="KDCircularProgress" customModule="Motion2Movement" customModuleProvider="target">
                                 <rect key="frame" x="74.5" y="220.5" width="225" height="225"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -135,13 +142,13 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 of 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pG0-Mg-sOS">
                                         <rect key="frame" x="0.0" y="0.0" width="55" height="27.5"/>
                                         <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
-                                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" red="0.20392156859999999" green="0.45882352939999999" blue="0.71372549019999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SETS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iqD-hd-3zK">
                                         <rect key="frame" x="0.0" y="27.5" width="55" height="27.5"/>
                                         <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
-                                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" red="0.20392156859999999" green="0.45882352939999999" blue="0.71372549019999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -213,28 +220,32 @@
                             <constraint firstItem="sCe-xP-doh" firstAttribute="leading" secondItem="QKu-zd-IEn" secondAttribute="leading" constant="74" id="GNT-9J-dhq"/>
                             <constraint firstItem="r0r-HP-StG" firstAttribute="centerX" secondItem="jc3-ka-kN0" secondAttribute="centerX" id="Lf6-Ae-tbD"/>
                             <constraint firstItem="EIY-nz-Ut6" firstAttribute="centerY" secondItem="jc3-ka-kN0" secondAttribute="centerY" id="Sgc-he-8hW"/>
+                            <constraint firstItem="Eqd-W1-6VV" firstAttribute="centerY" secondItem="2xY-RG-2s0" secondAttribute="centerY" id="Slc-CH-xZO"/>
                             <constraint firstItem="hAh-hY-N6i" firstAttribute="centerY" secondItem="sCe-xP-doh" secondAttribute="centerY" id="ULM-Ew-2Nh"/>
                             <constraint firstItem="zY7-5R-esE" firstAttribute="top" secondItem="YVy-NX-B0C" secondAttribute="bottom" constant="-2" id="WeZ-er-ofp"/>
                             <constraint firstItem="2xY-RG-2s0" firstAttribute="width" secondItem="jc3-ka-kN0" secondAttribute="width" multiplier="0.6" id="X0I-i8-I1E"/>
                             <constraint firstItem="QKu-zd-IEn" firstAttribute="bottom" secondItem="r0r-HP-StG" secondAttribute="bottom" constant="20" id="XRN-gB-HBd"/>
                             <constraint firstItem="YVy-NX-B0C" firstAttribute="leading" secondItem="QKu-zd-IEn" secondAttribute="leading" constant="16" id="YLg-Ih-E84"/>
                             <constraint firstItem="zkw-Wd-vzV" firstAttribute="top" secondItem="WFg-gs-fOJ" secondAttribute="bottom" constant="32" id="ZQ4-mb-nJn"/>
+                            <constraint firstItem="Eqd-W1-6VV" firstAttribute="centerX" secondItem="2xY-RG-2s0" secondAttribute="centerX" id="a4L-Ow-McQ"/>
                             <constraint firstItem="WFg-gs-fOJ" firstAttribute="top" secondItem="QKu-zd-IEn" secondAttribute="top" constant="24" id="cRb-vv-SDC"/>
                             <constraint firstItem="QKu-zd-IEn" firstAttribute="trailing" secondItem="zY7-5R-esE" secondAttribute="trailing" constant="16" id="ezb-CG-vwi"/>
                             <constraint firstItem="zkw-Wd-vzV" firstAttribute="centerX" secondItem="jc3-ka-kN0" secondAttribute="centerX" id="fu4-Nf-uIC"/>
                             <constraint firstItem="2xY-RG-2s0" firstAttribute="centerY" secondItem="jc3-ka-kN0" secondAttribute="centerY" id="gLA-Iz-hv3"/>
                             <constraint firstItem="zY7-5R-esE" firstAttribute="leading" secondItem="QKu-zd-IEn" secondAttribute="leading" constant="16" id="jmw-PU-oCb"/>
+                            <constraint firstItem="Eqd-W1-6VV" firstAttribute="width" secondItem="2xY-RG-2s0" secondAttribute="width" multiplier="1.3" id="o1q-1k-7eR"/>
                             <constraint firstItem="QKu-zd-IEn" firstAttribute="trailing" secondItem="hAh-hY-N6i" secondAttribute="trailing" constant="76" id="qqu-Ud-cnb"/>
                             <constraint firstItem="WFg-gs-fOJ" firstAttribute="centerX" secondItem="jc3-ka-kN0" secondAttribute="centerX" id="xLv-vb-row"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="QKu-zd-IEn"/>
                     </view>
                     <connections>
-                        <outlet property="circularProgress" destination="2xY-RG-2s0" id="7Kq-dp-yz3"/>
                         <outlet property="exerciseLabel" destination="zY7-5R-esE" id="eH4-pR-blf"/>
+                        <outlet property="repCircularProgress" destination="2xY-RG-2s0" id="aD2-X4-xcn"/>
                         <outlet property="repCounterLabel" destination="B0W-Fg-ckZ" id="SCf-fL-MvV"/>
                         <outlet property="repWordLabel" destination="Auf-ij-TO9" id="CIe-7f-dow"/>
                         <outlet property="romLabel" destination="oO9-7L-cAY" id="Geb-4A-xd1"/>
+                        <outlet property="setCircularProgress" destination="Eqd-W1-6VV" id="GbN-p1-hWS"/>
                         <outlet property="setCounterLabel" destination="pG0-Mg-sOS" id="dXs-j0-XnN"/>
                         <outlet property="setWordLabel" destination="iqD-hd-3zK" id="xQb-Nl-n7W"/>
                         <outlet property="timerLabel" destination="zkw-Wd-vzV" id="YsF-nn-sSy"/>

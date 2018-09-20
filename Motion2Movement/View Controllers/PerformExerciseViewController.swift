@@ -11,9 +11,11 @@ import UIKit
 class PerformExerciseViewController: UIViewController {
 
     // TODO: - Refactor into View Model
+    // TODO: - Add Rep and Set overflow logic
 
     // MARK: - Properties and Outlets
-    @IBOutlet weak var circularProgress: KDCircularProgress!
+    @IBOutlet weak var repCircularProgress: KDCircularProgress!
+    @IBOutlet weak var setCircularProgress: KDCircularProgress!
     @IBOutlet weak var exerciseLabel: UILabel!
     @IBOutlet weak var timerLabel: UILabel!
 
@@ -27,22 +29,31 @@ class PerformExerciseViewController: UIViewController {
     var exercise: ExerciseData!
     var activity: Activity?
     var timer = Timer()
-    var angles: [Double]!
+    var repAngles: [Double]!
+    var setAngles: [Double]!
     var repCounter = 0
+    var setCounter = 0
     var reps: Int!
+    var sets: Int!
+
+    enum MotionType {
+        case rep, set
+    }
 
     // MARK: - View Overrides
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
         setUpView()
         setUpCircularProgress()
 
         // MARK: - Demo
         reps = exercise.suggestedReps ?? 10
-        angles = setupAngles(reps)
-        animateCircularProgress(repCounter)
+        sets = exercise.suggestedSets ?? 5
+        repAngles = setupAngles(reps)
+        setAngles = setupAngles(sets)
+        animateCircularProgress(.rep)
+        animateCircularProgress(.set)
     }
 
     override func viewDidDisappear(_ animated: Bool) {
@@ -69,25 +80,61 @@ class PerformExerciseViewController: UIViewController {
     }
 
     fileprivate func setUpCircularProgress() {
-        circularProgress.startAngle = -90
-        circularProgress.progressThickness = 0.2
-        circularProgress.trackThickness = 0.6
-        circularProgress.clockwise = true
-        circularProgress.gradientRotateSpeed = 2
-        circularProgress.roundedCorners = false
-        circularProgress.glowMode = .noGlow
+        repCircularProgress.startAngle = -90
+        repCircularProgress.progressThickness = 0.2
+        repCircularProgress.trackThickness = 0.4
+        repCircularProgress.clockwise = true
+        repCircularProgress.gradientRotateSpeed = 2
+        repCircularProgress.roundedCorners = false
+        repCircularProgress.glowMode = .noGlow
         // circularProgress.glowAmount = 0.9
-        circularProgress.set(colors: UIColor.cyan, UIColor.blue)
+        repCircularProgress.trackColor = .gray
+        repCircularProgress.set(colors: UIColor.orange, UIColor.red)
+
+        setCircularProgress.startAngle = -90
+        setCircularProgress.progressThickness = 0.15
+        setCircularProgress.trackThickness = 0.35
+        setCircularProgress.clockwise = true
+        setCircularProgress.gradientRotateSpeed = 2
+        setCircularProgress.roundedCorners = false
+        setCircularProgress.glowMode = .noGlow
+        // circularProgress.glowAmount = 0.9
+        setCircularProgress.trackColor = .gray
+        setCircularProgress.set(colors: UIColor.cyan, UIColor.blue)
     }
 
-    fileprivate func animateCircularProgress(_ repCount: Int) {
-        let completion: ((Bool) -> Void) = { [weak self] _ in
+    fileprivate func animateCircularProgress(_ type: MotionType) {
+
+        var completion: ((Bool) -> Void)!
+        var angles: [Double]!
+        var motionCounter: Int!
+        var circularProgress: KDCircularProgress!
+
+        let repCompletion: ((Bool) -> Void) = { [weak self] _ in
             self?.repCounter += 1
             self?.repCounterLabel.text = "\(self?.repCounter ?? 0) of \(self?.exercise.suggestedReps ?? 0)"
         }
 
-        circularProgress.animate(toAngle: angles[repCount], duration: TimeInterval(exactly: 1)!, relativeDuration: true, completion: completion)
+        let setCompletion: ((Bool) -> Void) = { [weak self] _ in
+            self?.setCounter += 1
+            self?.setCounterLabel.text = "\(self?.setCounter ?? 0) of \(self?.exercise.suggestedSets ?? 0)"
+        }
 
+        if type == .rep {
+            completion = repCompletion
+            motionCounter = repCounter
+            angles = repAngles
+            circularProgress = repCircularProgress
+        } else if type == .set {
+            completion = setCompletion
+            motionCounter = setCounter
+            angles = setAngles
+            circularProgress = setCircularProgress
+        } else {
+            return
+        }
+
+        circularProgress.animate(toAngle: angles[motionCounter], duration: TimeInterval(exactly: 0.5)!, relativeDuration: true, completion: completion)
     }
 
      // MARK: - Navigation
