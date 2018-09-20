@@ -36,7 +36,7 @@ class PerformExerciseViewController: UIViewController {
     var reps: Int!
     var sets: Int!
 
-    enum MotionType {
+    private enum ExerciseMovementType {
         case rep, set
     }
 
@@ -68,18 +68,7 @@ class PerformExerciseViewController: UIViewController {
     }
 
     // MARK: Circular Progress Functions
-    func setupAngles(_ reps: Int) -> [Double] {
-        var angles = [Double]()
-        let angleToAdd = Double(360 / reps)
-
-        for x in 1...reps {
-            angles.append(angleToAdd * Double(x))
-        }
-
-        return angles
-    }
-
-    fileprivate func setUpCircularProgress() {
+    private func setUpCircularProgress() {
         repCircularProgress.startAngle = -90
         repCircularProgress.progressThickness = 0.2
         repCircularProgress.trackThickness = 0.4
@@ -103,7 +92,14 @@ class PerformExerciseViewController: UIViewController {
         setCircularProgress.set(colors: UIColor.cyan, UIColor.blue)
     }
 
-    fileprivate func animateCircularProgress(_ type: MotionType) {
+    /**
+     Animate the corresponding progress circle based on ExerciseMovementType.
+
+     - parameters:
+        - type: ExerciseMovementType to identify sets or reps
+     */
+
+    private func animateCircularProgress(_ type: ExerciseMovementType) {
 
         var completion: ((Bool) -> Void)!
         var angles: [Double]!

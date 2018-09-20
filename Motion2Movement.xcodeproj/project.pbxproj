@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2BE836F87B253C77AB42DBBA /* Pods_Motion2Movement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F1CE36A7CA35CEC7A85BD2D /* Pods_Motion2Movement.framework */; };
 		66F89F621F63D059E86D585A /* Pods_Motion2MovementTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE2B7B0BD941B60298CE0EB3 /* Pods_Motion2MovementTests.framework */; };
+		9E17007721537F2400E7D8D3 /* UIViewController+Angles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E17007621537F2400E7D8D3 /* UIViewController+Angles.swift */; };
 		9E1B510E20D1F8500039D7E3 /* ExerciseGuideTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1B510D20D1F8500039D7E3 /* ExerciseGuideTableViewController.swift */; };
 		9E1B511220D1F8E50039D7E3 /* ExerciseGuideTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1B511020D1F8E50039D7E3 /* ExerciseGuideTableViewCell.swift */; };
 		9E1B511320D1F8E50039D7E3 /* ExerciseGuideTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E1B511120D1F8E50039D7E3 /* ExerciseGuideTableViewCell.xib */; };
@@ -67,6 +68,7 @@
 		6E975CD44387C294B93E566F /* Pods-Motion2Movement.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Motion2Movement.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Motion2Movement/Pods-Motion2Movement.debug.xcconfig"; sourceTree = "<group>"; };
 		6F1CE36A7CA35CEC7A85BD2D /* Pods_Motion2Movement.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Motion2Movement.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		919F005939AA4369F9C65184 /* Pods-Motion2MovementTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Motion2MovementTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Motion2MovementTests/Pods-Motion2MovementTests.release.xcconfig"; sourceTree = "<group>"; };
+		9E17007621537F2400E7D8D3 /* UIViewController+Angles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Angles.swift"; sourceTree = "<group>"; };
 		9E1B510D20D1F8500039D7E3 /* ExerciseGuideTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseGuideTableViewController.swift; sourceTree = "<group>"; };
 		9E1B511020D1F8E50039D7E3 /* ExerciseGuideTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseGuideTableViewCell.swift; sourceTree = "<group>"; };
 		9E1B511120D1F8E50039D7E3 /* ExerciseGuideTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExerciseGuideTableViewCell.xib; sourceTree = "<group>"; };
@@ -206,6 +208,7 @@
 			isa = PBXGroup;
 			children = (
 				9E670D9F211D6B5F00A9E165 /* UIViewController+ToastMessage.swift */,
+				9E17007621537F2400E7D8D3 /* UIViewController+Angles.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -647,6 +650,7 @@
 				9E670D9B211D475000A9E165 /* PerformExerciseViewController.swift in Sources */,
 				9E1B511820D1FF050039D7E3 /* ViewModelProtocols.swift in Sources */,
 				9E1B512720D210070039D7E3 /* Assignment.swift in Sources */,
+				9E17007721537F2400E7D8D3 /* UIViewController+Angles.swift in Sources */,
 				9E1B512D20D210070039D7E3 /* ExerciseData.swift in Sources */,
 				9E9E57BE20E4599900E37FDC /* DeviceViewController.swift in Sources */,
 				9E670D9D211D669A00A9E165 /* ExerciseDetailViewController.swift in Sources */,
