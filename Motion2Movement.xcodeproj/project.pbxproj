@@ -10,6 +10,8 @@
 		2BE836F87B253C77AB42DBBA /* Pods_Motion2Movement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F1CE36A7CA35CEC7A85BD2D /* Pods_Motion2Movement.framework */; };
 		66F89F621F63D059E86D585A /* Pods_Motion2MovementTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE2B7B0BD941B60298CE0EB3 /* Pods_Motion2MovementTests.framework */; };
 		9E17007721537F2400E7D8D3 /* UIViewController+Angles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E17007621537F2400E7D8D3 /* UIViewController+Angles.swift */; };
+		9E17007B2153815200E7D8D3 /* LocalData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9E1700792153815200E7D8D3 /* LocalData.xcdatamodeld */; };
+		9E17007D215383DA00E7D8D3 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E17007C215383DA00E7D8D3 /* CoreDataStack.swift */; };
 		9E1B510E20D1F8500039D7E3 /* ExerciseGuideTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1B510D20D1F8500039D7E3 /* ExerciseGuideTableViewController.swift */; };
 		9E1B511220D1F8E50039D7E3 /* ExerciseGuideTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1B511020D1F8E50039D7E3 /* ExerciseGuideTableViewCell.swift */; };
 		9E1B511320D1F8E50039D7E3 /* ExerciseGuideTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E1B511120D1F8E50039D7E3 /* ExerciseGuideTableViewCell.xib */; };
@@ -28,7 +30,7 @@
 		9E670D9D211D669A00A9E165 /* ExerciseDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E670D9C211D669A00A9E165 /* ExerciseDetailViewController.swift */; };
 		9E670DA0211D6B5F00A9E165 /* UIViewController+ToastMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E670D9F211D6B5F00A9E165 /* UIViewController+ToastMessage.swift */; };
 		9E9E57BE20E4599900E37FDC /* DeviceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9E57BD20E4599900E37FDC /* DeviceViewController.swift */; };
-		9EA0D07020E41E0200AF0BB7 /* SWRevealViewControllerSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA0D06F20E41E0200AF0BB7 /* SWRevealViewControllerSettings.swift */; };
+		9EA0D07020E41E0200AF0BB7 /* UIViewController+Sidebar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA0D06F20E41E0200AF0BB7 /* UIViewController+Sidebar.swift */; };
 		9EAD85C020DF60820088FCB8 /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAD85BF20DF60820088FCB8 /* NetworkHelper.swift */; };
 		9EAD85C320DF609C0088FCB8 /* AssignmentAPIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAD85C120DF609C0088FCB8 /* AssignmentAPIHelper.swift */; };
 		9EAD85C420DF609C0088FCB8 /* ExerciseAPIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAD85C220DF609C0088FCB8 /* ExerciseAPIHelper.swift */; };
@@ -69,6 +71,8 @@
 		6F1CE36A7CA35CEC7A85BD2D /* Pods_Motion2Movement.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Motion2Movement.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		919F005939AA4369F9C65184 /* Pods-Motion2MovementTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Motion2MovementTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Motion2MovementTests/Pods-Motion2MovementTests.release.xcconfig"; sourceTree = "<group>"; };
 		9E17007621537F2400E7D8D3 /* UIViewController+Angles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Angles.swift"; sourceTree = "<group>"; };
+		9E17007A2153815200E7D8D3 /* LocalData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LocalData.xcdatamodel; sourceTree = "<group>"; };
+		9E17007C215383DA00E7D8D3 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		9E1B510D20D1F8500039D7E3 /* ExerciseGuideTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseGuideTableViewController.swift; sourceTree = "<group>"; };
 		9E1B511020D1F8E50039D7E3 /* ExerciseGuideTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseGuideTableViewCell.swift; sourceTree = "<group>"; };
 		9E1B511120D1F8E50039D7E3 /* ExerciseGuideTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExerciseGuideTableViewCell.xib; sourceTree = "<group>"; };
@@ -87,7 +91,7 @@
 		9E670D9C211D669A00A9E165 /* ExerciseDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDetailViewController.swift; sourceTree = "<group>"; };
 		9E670D9F211D6B5F00A9E165 /* UIViewController+ToastMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+ToastMessage.swift"; sourceTree = "<group>"; };
 		9E9E57BD20E4599900E37FDC /* DeviceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceViewController.swift; sourceTree = "<group>"; };
-		9EA0D06F20E41E0200AF0BB7 /* SWRevealViewControllerSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWRevealViewControllerSettings.swift; sourceTree = "<group>"; };
+		9EA0D06F20E41E0200AF0BB7 /* UIViewController+Sidebar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Sidebar.swift"; sourceTree = "<group>"; };
 		9EAD85BF20DF60820088FCB8 /* NetworkHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
 		9EAD85C120DF609C0088FCB8 /* AssignmentAPIHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssignmentAPIHelper.swift; sourceTree = "<group>"; };
 		9EAD85C220DF609C0088FCB8 /* ExerciseAPIHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseAPIHelper.swift; sourceTree = "<group>"; };
@@ -164,6 +168,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		9E1700782153810100E7D8D3 /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				9E17007C215383DA00E7D8D3 /* CoreDataStack.swift */,
+				9E1700792153815200E7D8D3 /* LocalData.xcdatamodeld */,
+			);
+			path = "Core Data";
+			sourceTree = "<group>";
+		};
 		9E1B510F20D1F8C00039D7E3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -173,12 +186,13 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		9E1B511620D1FEE80039D7E3 /* Protocols and Extensions */ = {
+		9E1B511620D1FEE80039D7E3 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				9E1B511A20D210060039D7E3 /* Exercise+Protocols.swift */,
 				9E1B511720D1FF050039D7E3 /* ViewModelProtocols.swift */,
 			);
-			path = "Protocols and Extensions";
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		9E1B511920D1FFFB0039D7E3 /* Models */ = {
@@ -187,7 +201,6 @@
 				9E1B512120D210070039D7E3 /* Activity.swift */,
 				9E1B511D20D210060039D7E3 /* Assignment.swift */,
 				9E1B512220D210070039D7E3 /* AuthData.swift */,
-				9E1B511A20D210060039D7E3 /* Exercise+Protocols.swift */,
 				9E1B512320D210070039D7E3 /* ExerciseData.swift */,
 				9E1B511F20D210060039D7E3 /* LoginData.swift */,
 				9E1B511B20D210060039D7E3 /* PatientData.swift */,
@@ -207,6 +220,7 @@
 		9E670D9E211D6B3100A9E165 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				9EA0D06F20E41E0200AF0BB7 /* UIViewController+Sidebar.swift */,
 				9E670D9F211D6B5F00A9E165 /* UIViewController+ToastMessage.swift */,
 				9E17007621537F2400E7D8D3 /* UIViewController+Angles.swift */,
 			);
@@ -294,7 +308,6 @@
 				9EB51CD420CF149800271C69 /* Motion2Movement-Bridging-Header.h */,
 				9EB51CD520CF149800271C69 /* SWRevealViewController.h */,
 				9EB51CD620CF149800271C69 /* SWRevealViewController.m */,
-				9EA0D06F20E41E0200AF0BB7 /* SWRevealViewControllerSettings.swift */,
 			);
 			path = SWRevealViewController;
 			sourceTree = "<group>";
@@ -325,10 +338,11 @@
 			isa = PBXGroup;
 			children = (
 				9E9E57BC20E4232300E37FDC /* App */,
+				9E1700782153810100E7D8D3 /* Core Data */,
 				9E670D9E211D6B3100A9E165 /* Extensions */,
 				9E1B511920D1FFFB0039D7E3 /* Models */,
 				9EAD85BE20DF5EC60088FCB8 /* Networking */,
-				9E1B511620D1FEE80039D7E3 /* Protocols and Extensions */,
+				9E1B511620D1FEE80039D7E3 /* Protocols */,
 				9EAF6C37209E670500A35850 /* Storyboards */,
 				9EAF6C36209E66F300A35850 /* Supporting Files */,
 				9EAF6C38209E671300A35850 /* View Controllers */,
@@ -644,9 +658,11 @@
 				9E670DA0211D6B5F00A9E165 /* UIViewController+ToastMessage.swift in Sources */,
 				9EFD62D7209E6522005AEEE4 /* AppDelegate.swift in Sources */,
 				9EAD85C620DF60BD0088FCB8 /* AppError.swift in Sources */,
+				9E17007B2153815200E7D8D3 /* LocalData.xcdatamodeld in Sources */,
 				9E1B512420D210070039D7E3 /* Exercise+Protocols.swift in Sources */,
 				9E670D98211D452900A9E165 /* KDCircularProgress.swift in Sources */,
-				9EA0D07020E41E0200AF0BB7 /* SWRevealViewControllerSettings.swift in Sources */,
+				9E17007D215383DA00E7D8D3 /* CoreDataStack.swift in Sources */,
+				9EA0D07020E41E0200AF0BB7 /* UIViewController+Sidebar.swift in Sources */,
 				9E670D9B211D475000A9E165 /* PerformExerciseViewController.swift in Sources */,
 				9E1B511820D1FF050039D7E3 /* ViewModelProtocols.swift in Sources */,
 				9E1B512720D210070039D7E3 /* Assignment.swift in Sources */,
@@ -1003,6 +1019,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9E1700792153815200E7D8D3 /* LocalData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9E17007A2153815200E7D8D3 /* LocalData.xcdatamodel */,
+			);
+			currentVersion = 9E17007A2153815200E7D8D3 /* LocalData.xcdatamodel */;
+			path = LocalData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 9EFD62CB209E6522005AEEE4 /* Project object */;
 }

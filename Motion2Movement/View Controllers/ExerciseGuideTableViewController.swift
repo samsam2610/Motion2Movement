@@ -19,7 +19,7 @@ class ExerciseGuideTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        SWRevealViewControllerSettings.setUpSideBar(self)
+        setUpSideBar()
 
         let nib = UINib.init(nibName: "ExerciseGuideTableViewCell", bundle: nil)
         self.tableView.register(nib, forCellReuseIdentifier: "exerciseCell")
@@ -32,11 +32,7 @@ class ExerciseGuideTableViewController: UITableViewController {
             self.tableView.reloadData()
         }
 
-        // Uncomment the following line to preserve selection between presentations
         self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
 
         if let _ = didAppearFromSelectSegue {
             self.title = "Select Exercise"
@@ -63,20 +59,20 @@ class ExerciseGuideTableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
-//    override func numberOfSections(in tableView: UITableView) -> Int {
-//        return 0
-//    }
-
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return viewModel.exercises.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "exerciseCell", for: indexPath) as! ExerciseGuideTableViewCell
+        let exercise = viewModel.getExerciseName(atIndexPath: indexPath)
+        var statusString = ""
+//        var statusString = "3 sets      8 reps      100 ROM      8 min"
 
-       let exercise = viewModel.getExerciseName(atIndexPath: indexPath)
+        statusString += "\(exercise.suggestedSets ?? 0) sets     \(exercise.suggestedReps ?? 0) reps      \(abs(Int32(exercise.legAngle_max - exercise.legAngle_min) - Int32(exercise.thighAngle_max - exercise.thighAngle_min))) ROM"
 
         cell.exerciseNameLabel.text = exercise.exerciseName
+        cell.exerciseStatusLabel.text = statusString
         cell.checkButton.tag = indexPath.row
 
         // Show that exercise is selected in cell.

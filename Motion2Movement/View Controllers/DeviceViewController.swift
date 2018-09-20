@@ -15,7 +15,7 @@ class DeviceViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        SWRevealViewControllerSettings.setUpSideBar(self)
+        setUpSideBar()
     }
 
 }
