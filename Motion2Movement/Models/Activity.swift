@@ -9,13 +9,17 @@
 import Foundation
 
 protocol ActivityParam: ExerciseInfo {
-    var timeStart: String {get set}
-    var timeEnd: String {get set}
-    var duration: String {get set}
-    var repetitions: Int {get set}
-    var averageAngle: Float {get set}
-    var minAngle: Float {get set}
-    var maxAngle: Float {get set}
+    var timeStart: String { get set }
+    var timeEnd: String { get set }
+    var duration: String { get set }
+    var repetitions: Int { get set }
+    var averageAngle: Float { get set }
+    var minAngle: Float { get set }
+    var maxAngle: Float { get set }
+
+    // TODO: Add to backend
+    var suggestedReps: Int? { get set }
+    var suggestedSets: Int? { get set }
 }
 
 struct Activity: ActivityParam, Codable {
@@ -31,6 +35,8 @@ struct Activity: ActivityParam, Codable {
     var averageAngle: Float
     var minAngle: Float
     var maxAngle: Float
+    var suggestedReps: Int?
+    var suggestedSets: Int?
 
     private enum CodingKeys: String, CodingKey {
         case id
@@ -45,5 +51,7 @@ struct Activity: ActivityParam, Codable {
         case averageAngle = "average_angle"
         case minAngle = "min_angle"
         case maxAngle = "max_angle"
+        case suggestedReps = "suggested_reps"
+        case suggestedSets = "suggested_sets"
     }
 }

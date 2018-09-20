@@ -30,6 +30,8 @@ struct PatientData: ActivityParam, Codable {
     var minAngle: Float
     var maxAngle: Float
     var assignmentID: String?
+    var suggestedReps: Int?
+    var suggestedSets: Int?
     
     private enum CodingKeys: String, CodingKey {
         case name = "user_id"
@@ -42,10 +44,12 @@ struct PatientData: ActivityParam, Codable {
         case minAngle = "min_angle"
         case maxAngle = "max_angle"
         case assignmentID = "assignment_id"
+        case suggestedReps = "suggested_reps"
+        case suggestedSets = "suggested_sets"
         
     }
     
-    init(toJSon name: String, exerciseID: String, exerciseName: String, timeStart: Date, timeEnd: Date, repetitions: Int, averageAngle: Float, minAngle: Float, maxAngle: Float) {
+    init(toJSon name: String, exerciseID: String, exerciseName: String, timeStart: Date, timeEnd: Date, repetitions: Int, averageAngle: Float, minAngle: Float, maxAngle: Float, _ suggestedReps: Int?, _ suggestedSets: Int?) {
         self.name = name
         self.exerciseName = exerciseName
         self.timeStart = String(Int(timeStart.timeIntervalSince1970))
@@ -55,6 +59,8 @@ struct PatientData: ActivityParam, Codable {
         self.minAngle = minAngle
         self.maxAngle = maxAngle
         self.duration = PatientData.intervalCalculate(startDate: timeStart, endDate: timeEnd)
+        self.suggestedReps = suggestedReps
+        self.suggestedSets = suggestedSets
 
         // TODO: - Assignment selection
         //self.assignmentID = SelectedAssignment.manager.getID()

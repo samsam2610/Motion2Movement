@@ -232,6 +232,11 @@
                     <connections>
                         <outlet property="circularProgress" destination="2xY-RG-2s0" id="7Kq-dp-yz3"/>
                         <outlet property="exerciseLabel" destination="zY7-5R-esE" id="eH4-pR-blf"/>
+                        <outlet property="repCounterLabel" destination="B0W-Fg-ckZ" id="SCf-fL-MvV"/>
+                        <outlet property="repWordLabel" destination="Auf-ij-TO9" id="CIe-7f-dow"/>
+                        <outlet property="romLabel" destination="oO9-7L-cAY" id="Geb-4A-xd1"/>
+                        <outlet property="setCounterLabel" destination="pG0-Mg-sOS" id="dXs-j0-XnN"/>
+                        <outlet property="setWordLabel" destination="iqD-hd-3zK" id="xQb-Nl-n7W"/>
                         <outlet property="timerLabel" destination="zkw-Wd-vzV" id="YsF-nn-sSy"/>
                     </connections>
                 </viewController>
@@ -672,6 +677,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Jt9-M5-sSv"/>
                     </view>
+                    <connections>
+                        <outlet property="exerciseString" destination="dyl-wo-YfD" id="pn0-Sa-6T7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s4Q-uG-dko" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

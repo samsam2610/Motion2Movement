@@ -11,6 +11,8 @@ import UIKit
 class ExerciseDetailViewController: UIViewController {
 
     // MARK: - Properties and Outlets
+    @IBOutlet weak var exerciseString: UILabel!
+
     var exercise: ExerciseData!
 
     // MARK: - View Overrides
@@ -18,6 +20,8 @@ class ExerciseDetailViewController: UIViewController {
         super.viewDidLoad()
 
         self.title = exercise.exerciseName
+
+        self.exerciseString.text = "\(exercise.exerciseName): \(exercise.description ?? "")"
     }
 
     // MARK: - Functions and Methods

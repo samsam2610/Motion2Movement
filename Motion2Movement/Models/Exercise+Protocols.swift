@@ -1,5 +1,5 @@
 //
-//  Exercise.swift
+//  Exercise+Protocols.swift
 //  M2M
 //
 //  Created by Tran Sam on 2/20/18.
@@ -9,7 +9,11 @@
 import Foundation
 
 protocol ExerciseInfo {
-    var exerciseName: String {get}
+    var exerciseName: String { get }
+
+    // TODO: Add to backend
+    var suggestedReps: Int? { get }
+    var suggestedSets: Int? { get }
 }
 
 protocol ExerciseParam {
@@ -21,6 +25,7 @@ protocol ExerciseParam {
 
 protocol ExerciseInstruction {
     var description: String { get }
+    
 //    var link: URL { get }
 }
 

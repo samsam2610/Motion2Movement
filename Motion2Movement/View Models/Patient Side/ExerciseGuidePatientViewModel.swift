@@ -15,8 +15,8 @@ class ExerciseGuidePatientViewModel: ExerciseGuideViewModel {
 
     func loadDummyData(_ completion: @escaping () -> ()) {
         exercises = [
-            ExerciseData(toJson: "Walking", "Take a few steps", 10, 20, 10, 20),
-            ExerciseData(toJson: "Leg lifts", "Lift your leg", 10, 20, 10, 20)
+            ExerciseData(toJson: "Knee Bends", "Bend your knee", 10, 20, 10, 20, 5, 10),
+            ExerciseData(toJson: "Leg lifts", "Lift your leg", 10, 20, 10, 20, 10, 5)
         ]
     }
 
