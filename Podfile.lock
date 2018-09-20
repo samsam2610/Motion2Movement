@@ -1,0 +1,112 @@
+PODS:
+  - Action (3.5.0):
+    - RxCocoa (~> 4.0)
+    - RxSwift (~> 4.0)
+  - Charts (3.0.5):
+    - Charts/Core (= 3.0.5)
+  - Charts/Core (3.0.5)
+  - Eureka (4.1.1)
+  - FunkyNetwork (0.1.4):
+    - OHHTTPStubs/Swift
+    - Prelude (~> 3.0)
+    - ReactiveSwift
+  - Nimble (7.1.1)
+  - OHHTTPStubs/Core (6.1.0)
+  - OHHTTPStubs/Default (6.1.0):
+    - OHHTTPStubs/Core
+    - OHHTTPStubs/JSON
+    - OHHTTPStubs/NSURLSession
+    - OHHTTPStubs/OHPathHelpers
+  - OHHTTPStubs/JSON (6.1.0):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/NSURLSession (6.1.0):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/OHPathHelpers (6.1.0)
+  - OHHTTPStubs/Swift (6.1.0):
+    - OHHTTPStubs/Default
+  - Prelude (3.0.0)
+  - Quick (1.3.0)
+  - ReactiveSwift (3.1.0):
+    - Result (~> 3.2)
+  - ResearchKit (1.5.2)
+  - Result (3.2.4)
+  - RxBlocking (4.1.2):
+    - RxSwift (~> 4.0)
+  - RxCocoa (4.1.2):
+    - RxSwift (~> 4.0)
+  - RxCodable (0.3.0):
+    - RxCodable/Core (= 0.3.0)
+  - RxCodable/Core (0.3.0):
+    - RxSwift (>= 4.0.0-beta.0)
+  - RxSwift (4.1.2)
+  - RxTest (4.1.2):
+    - RxSwift (~> 4.0)
+  - SQLite.swift (0.11.5):
+    - SQLite.swift/standard (= 0.11.5)
+  - SQLite.swift/standard (0.11.5)
+
+DEPENDENCIES:
+  - Action
+  - Charts (~> 3.0.4)
+  - Eureka
+  - FunkyNetwork (from `https://github.com/schrockblock/funky-network.git`)
+  - Nimble
+  - Quick
+  - ResearchKit (~> 1.0)
+  - RxBlocking (~> 4.0)
+  - RxCocoa (~> 4.0)
+  - RxCodable
+  - RxSwift (~> 4.0)
+  - RxTest (~> 4.0)
+  - SQLite.swift (~> 0.11.5)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Action
+    - Charts
+    - Eureka
+    - Nimble
+    - OHHTTPStubs
+    - Prelude
+    - Quick
+    - ReactiveSwift
+    - ResearchKit
+    - Result
+    - RxBlocking
+    - RxCocoa
+    - RxCodable
+    - RxSwift
+    - RxTest
+    - SQLite.swift
+
+EXTERNAL SOURCES:
+  FunkyNetwork:
+    :git: https://github.com/schrockblock/funky-network.git
+
+CHECKOUT OPTIONS:
+  FunkyNetwork:
+    :commit: 8f360bdf3def06c63616b3b19cf6c8cc5b901438
+    :git: https://github.com/schrockblock/funky-network.git
+
+SPEC CHECKSUMS:
+  Action: d60087ebce41b969d1afdad01e2fa1372a82f26e
+  Charts: 45cdc985b764c838b35ee47eb1365d15735f6d1a
+  Eureka: b88fb930e42c79f8c03c373d0fcdc28c1d6c50ed
+  FunkyNetwork: 6eb382dcab7c5947ea7e8d3c72427ee91d87c35f
+  Nimble: 391f07782af4b37914f9bd7b2ffbb952731b8202
+  OHHTTPStubs: 1e21c7d2c084b8153fc53d48400d8919d2d432d0
+  Prelude: fe4cc0fd961d34edf48fe6b04d05c863449efb0a
+  Quick: 03278013f71aa05fe9ecabc94fbcc6835f1ee76f
+  ReactiveSwift: 5b26d2e988fe0eed2daf48c4054d1de74db50184
+  ResearchKit: a5770681dd61afddd3d1f24d232b9abf00cba454
+  Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
+  RxBlocking: f6054985901412fc8c02daa84e92d4ba68c61389
+  RxCocoa: d88ba0f1f6abf040011a9eb4b539324fc426843a
+  RxCodable: 12d41ab0ba58f455cfc83965fcc927ac4bad3e7f
+  RxSwift: e49536837d9901277638493ea537394d4b55f570
+  RxTest: e634f15fd2c2cd0e0120132ef7a4f7be69ad0393
+  SQLite.swift: 6e5356850bb1791459f8c16d6ee9195b28714a2e
+
+PODFILE CHECKSUM: 1282f025243e0d7c94bd60a0e32c97748f3233c0
+
+COCOAPODS: 1.5.0
