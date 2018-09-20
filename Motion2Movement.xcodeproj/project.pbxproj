@@ -12,6 +12,9 @@
 		9E17007721537F2400E7D8D3 /* UIViewController+Angles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E17007621537F2400E7D8D3 /* UIViewController+Angles.swift */; };
 		9E17007B2153815200E7D8D3 /* LocalData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9E1700792153815200E7D8D3 /* LocalData.xcdatamodeld */; };
 		9E17007D215383DA00E7D8D3 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E17007C215383DA00E7D8D3 /* CoreDataStack.swift */; };
+		9E170085215398CC00E7D8D3 /* BluetoothFlow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E170084215398CC00E7D8D3 /* BluetoothFlow.storyboard */; };
+		9E17008A215399B700E7D8D3 /* ExerciseGuideFlow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E170089215399B700E7D8D3 /* ExerciseGuideFlow.storyboard */; };
+		9E17008D21539C1F00E7D8D3 /* HomeFlow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E17008C21539C1F00E7D8D3 /* HomeFlow.storyboard */; };
 		9E1B510E20D1F8500039D7E3 /* ExerciseGuideTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1B510D20D1F8500039D7E3 /* ExerciseGuideTableViewController.swift */; };
 		9E1B511220D1F8E50039D7E3 /* ExerciseGuideTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1B511020D1F8E50039D7E3 /* ExerciseGuideTableViewCell.swift */; };
 		9E1B511320D1F8E50039D7E3 /* ExerciseGuideTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E1B511120D1F8E50039D7E3 /* ExerciseGuideTableViewCell.xib */; };
@@ -73,6 +76,9 @@
 		9E17007621537F2400E7D8D3 /* UIViewController+Angles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Angles.swift"; sourceTree = "<group>"; };
 		9E17007A2153815200E7D8D3 /* LocalData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LocalData.xcdatamodel; sourceTree = "<group>"; };
 		9E17007C215383DA00E7D8D3 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		9E170084215398CC00E7D8D3 /* BluetoothFlow.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = BluetoothFlow.storyboard; path = Base.lproj/BluetoothFlow.storyboard; sourceTree = "<group>"; };
+		9E170089215399B700E7D8D3 /* ExerciseGuideFlow.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = ExerciseGuideFlow.storyboard; path = Base.lproj/ExerciseGuideFlow.storyboard; sourceTree = "<group>"; };
+		9E17008C21539C1F00E7D8D3 /* HomeFlow.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = HomeFlow.storyboard; path = Base.lproj/HomeFlow.storyboard; sourceTree = "<group>"; };
 		9E1B510D20D1F8500039D7E3 /* ExerciseGuideTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseGuideTableViewController.swift; sourceTree = "<group>"; };
 		9E1B511020D1F8E50039D7E3 /* ExerciseGuideTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseGuideTableViewCell.swift; sourceTree = "<group>"; };
 		9E1B511120D1F8E50039D7E3 /* ExerciseGuideTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExerciseGuideTableViewCell.xib; sourceTree = "<group>"; };
@@ -276,6 +282,9 @@
 		9EAF6C37209E670500A35850 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				9E170084215398CC00E7D8D3 /* BluetoothFlow.storyboard */,
+				9E170089215399B700E7D8D3 /* ExerciseGuideFlow.storyboard */,
+				9E17008C21539C1F00E7D8D3 /* HomeFlow.storyboard */,
 				9EFD62DF209E6523005AEEE4 /* LaunchScreen.storyboard */,
 				9EFD62DA209E6522005AEEE4 /* Main.storyboard */,
 			);
@@ -482,7 +491,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E1B511320D1F8E50039D7E3 /* ExerciseGuideTableViewCell.xib in Resources */,
+				9E17008A215399B700E7D8D3 /* ExerciseGuideFlow.storyboard in Resources */,
 				9EFD62E1209E6523005AEEE4 /* LaunchScreen.storyboard in Resources */,
+				9E170085215398CC00E7D8D3 /* BluetoothFlow.storyboard in Resources */,
+				9E17008D21539C1F00E7D8D3 /* HomeFlow.storyboard in Resources */,
 				9EFD62DE209E6523005AEEE4 /* Assets.xcassets in Resources */,
 				9EFD62DC209E6522005AEEE4 /* Main.storyboard in Resources */,
 			);
