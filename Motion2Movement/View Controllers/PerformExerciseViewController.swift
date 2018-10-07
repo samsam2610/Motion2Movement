@@ -13,6 +13,16 @@ class PerformExerciseViewController: UIViewController {
     // TODO: - Refactor into View Model
     // TODO: - Add Rep and Set overflow logic
 
+    // This VC attempts to detect each repetition of the movement.
+    // Once it detects the threshold for a set (which is given by
+    // the Exercise object that's passed into this VC), it should
+    // reset the repCounter to zero and increment the setCounter by
+    // 1. The countdown timer should trigger, and will continue
+    // until it hits zero or if the user continues moving. This
+    // process will repeat once the activity is prematurely marked
+    // Completed or once the setCounter reaches the target amount
+    // specified by the Exercise object.
+
     // MARK: - Properties and Outlets
     @IBOutlet weak var repCircularProgress: KDCircularProgress!
     @IBOutlet weak var setCircularProgress: KDCircularProgress!
@@ -58,6 +68,8 @@ class PerformExerciseViewController: UIViewController {
 
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
+
+        // TODO: - Turn off timer and save exercise.
     }
 
     // MARK: - Functions and Methods
