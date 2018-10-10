@@ -9,6 +9,7 @@
 import Foundation
 
 extension UIViewController {
+
     /**
      Calculates the angles that each rep/set will cover on the corresponding progress circle.
 
@@ -18,7 +19,6 @@ extension UIViewController {
      - returns:
      An array of Doubles that are the starting point of each circle slice.
      */
-
     func setupAngles(_ movements: Int) -> [Double] {
         var angles = [Double]()
         let angleToAdd = Double(360 / movements)
@@ -29,6 +29,5 @@ extension UIViewController {
 
         return angles
     }
-
 
 }
