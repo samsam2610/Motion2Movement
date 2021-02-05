@@ -4,6 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
@@ -271,21 +272,21 @@
             </objects>
             <point key="canvasLocation" x="-47" y="-546"/>
         </scene>
-        <!--UITableViewController-BBD-XN-af7-->
+        <!--ExerciseGuideTableViewController-->
         <scene sceneID="bmz-PL-jfF">
             <objects>
-                <viewControllerPlaceholder storyboardName="ExerciseGuideFlow" referencedIdentifier="UITableViewController-BBD-XN-af7" id="BPc-Gm-NSl" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="ExerciseGuideFlow" referencedIdentifier="ExerciseGuideTableViewController" id="BPc-Gm-NSl" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="epK-fi-cIR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="749.60000000000002" y="198.35082458770617"/>
+            <point key="canvasLocation" x="750" y="-120"/>
         </scene>
-        <!--UIViewController-I6w-CM-tcg-->
+        <!--ExerciseDetailViewController-->
         <scene sceneID="1zY-vd-Xo1">
             <objects>
-                <viewControllerPlaceholder storyboardName="ExerciseGuideFlow" referencedIdentifier="UIViewController-I6w-CM-tcg" id="scD-4A-BOH" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="ExerciseGuideFlow" referencedIdentifier="ExerciseDetailViewController" id="scD-4A-BOH" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Zc-Ua-MSQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1614" y="198"/>
+            <point key="canvasLocation" x="1614" y="-120"/>
         </scene>
     </scenes>
     <resources>
